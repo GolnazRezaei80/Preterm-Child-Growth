@@ -1,0 +1,686 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\Golnaz\Desktop\preterm\DO\logs\interaction\GEE\Obesity\Obesity_interaction_CENTERED2.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}17 Dec 2024, 16:28:56
+
+{com}.  mi estimate, dots post eform: xtgee obesity i.PRETERM  c.Growth_Month i.center c.Age SEX c.GRAVID ANXIETY CHRONIC_DISEASE DailySmoking SGA CongMal c.TWIN GDM_final c.SES c.BMI_beforePreg i.PRETERM#c.Growth_Month, family(binomial) link(logit) corr(exchangeable)
+{res}
+{txt}Imputations ({res:20}):
+{col 3}{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}10{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}20 done
+{res}
+{txt}Multiple-imputation estimates{col 49}Imputations{col 67}= {res}        20
+{txt}GEE population-averaged model{col 49}Number of obs{col 67}= {res}    51,532
+
+{txt}Group variable:{ralign 27:{res:id}}{col 49}Number of groups{col 67}= {res}     6,442
+{txt}Link:{ralign 37:{res:logit}}{col 49}Obs per group:
+Family:{ralign 35:{res:binomial}}{col 49}              min{col 67}= {res}         4
+{txt}Correlation:{ralign 30:{res:exchangeable}}{col 49}              avg{col 67}= {res}       8.0
+{txt}Scale parameter:{ralign 26:{res:1}}{col 49}              max{col 67}= {res}         8
+
+{txt}{col 49}Average RVI{col 67}= {res}    1.3359
+{txt}{col 49}Largest FMI{col 67}= {res}    0.9019
+{txt}DF adjustment:{ralign 28: {res:Large sample}}{col 49}DF:     min{col 67}= {res}     23.77
+{txt}{col 49}        avg{col 67}= {res}    211.01
+{txt}{col 49}        max{col 67}= {res}  1,058.15
+{txt}Model F test:{ralign 29: {res:Equal FMI}}{col 49}F({res}  22{txt},{res} 1412.7{txt}){col 67}= {res}     11.31
+{txt}Within VCE type: {ralign 25:{res:Conventional}}{col 49}Prob > F{col 67}= {res}    0.0000
+
+{txt}{hline 23}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}               obesity{col 24}{c |}     exp(b){col 36}   Std. err.{col 48}      t{col 56}   P>|t|{col 64}     [95% con{col 77}f. interval]
+{hline 23}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 15}PRETERM {c |}
+{space 20}1  {c |}{col 24}{res}{space 2} .9647431{col 36}{space 2} .1930987{col 47}{space 1}   -0.18{col 56}{space 3}0.858{col 64}{space 4}  .650974{col 77}{space 3} 1.429749
+{txt}{space 20}2  {c |}{col 24}{res}{space 2} .7569553{col 36}{space 2} .4740744{col 47}{space 1}   -0.44{col 56}{space 3}0.657{col 64}{space 4} .2206808{col 77}{space 3} 2.596426
+{txt}{space 20}3  {c |}{col 24}{res}{space 2} 1.330999{col 36}{space 2} .9270437{col 47}{space 1}    0.41{col 56}{space 3}0.682{col 64}{space 4} .3393398{col 77}{space 3}   5.2206
+{txt}{space 22} {c |}
+{space 10}Growth_Month {c |}{col 24}{res}{space 2} 1.021222{col 36}{space 2} .0035099{col 47}{space 1}    6.11{col 56}{space 3}0.000{col 64}{space 4}    1.014{col 77}{space 3} 1.028495
+{txt}{space 22} {c |}
+{space 16}center {c |}
+{space 17}Yazd  {c |}{col 24}{res}{space 2} .8685404{col 36}{space 2} .1213925{col 47}{space 1}   -1.01{col 56}{space 3}0.319{col 64}{space 4} .6554269{col 77}{space 3} 1.150948
+{txt}{space 12}Rafsanjan  {c |}{col 24}{res}{space 2}   1.3148{col 36}{space 2} .2239393{col 47}{space 1}    1.61{col 56}{space 3}0.115{col 64}{space 4} .9327682{col 77}{space 3} 1.853301
+{txt}{space 15}Semnan  {c |}{col 24}{res}{space 2} 1.644148{col 36}{space 2} .3045143{col 47}{space 1}    2.68{col 56}{space 3}0.012{col 64}{space 4} 1.126818{col 77}{space 3} 2.398989
+{txt}{space 22} {c |}
+{space 19}Age {c |}{col 24}{res}{space 2} .9997699{col 36}{space 2} .0085076{col 47}{space 1}   -0.03{col 56}{space 3}0.978{col 64}{space 4} .9831053{col 77}{space 3} 1.016717
+{txt}{space 19}SEX {c |}{col 24}{res}{space 2} .7255696{col 36}{space 2} .0627657{col 47}{space 1}   -3.71{col 56}{space 3}0.000{col 64}{space 4} .6108742{col 77}{space 3} .8617998
+{txt}{space 16}GRAVID {c |}{col 24}{res}{space 2} .9617131{col 36}{space 2} .0432478{col 47}{space 1}   -0.87{col 56}{space 3}0.387{col 64}{space 4} .8797827{col 77}{space 3} 1.051273
+{txt}{space 15}ANXIETY {c |}{col 24}{res}{space 2} .9339824{col 36}{space 2} .1616005{col 47}{space 1}   -0.39{col 56}{space 3}0.694{col 64}{space 4} .6630998{col 77}{space 3} 1.315523
+{txt}{space 7}CHRONIC_DISEASE {c |}{col 24}{res}{space 2} .9451884{col 36}{space 2} .0755528{col 47}{space 1}   -0.71{col 56}{space 3}0.482{col 64}{space 4} .8073364{col 77}{space 3} 1.106578
+{txt}{space 10}DailySmoking {c |}{col 24}{res}{space 2} .5600402{col 36}{space 2} .4517092{col 47}{space 1}   -0.72{col 56}{space 3}0.473{col 64}{space 4}  .114054{col 77}{space 3}  2.74997
+{txt}{space 19}SGA {c |}{col 24}{res}{space 2} .4806325{col 36}{space 2} .1245843{col 47}{space 1}   -2.83{col 56}{space 3}0.005{col 64}{space 4} .2878474{col 77}{space 3}  .802535
+{txt}{space 15}CongMal {c |}{col 24}{res}{space 2} .8113109{col 36}{space 2}  .186147{col 47}{space 1}   -0.91{col 56}{space 3}0.363{col 64}{space 4} .5158248{col 77}{space 3} 1.276064
+{txt}{space 18}TWIN {c |}{col 24}{res}{space 2} .7910687{col 36}{space 2} .2005886{col 47}{space 1}   -0.92{col 56}{space 3}0.357{col 64}{space 4} .4795008{col 77}{space 3} 1.305086
+{txt}{space 13}GDM_final {c |}{col 24}{res}{space 2} 1.020656{col 36}{space 2} .1054624{col 47}{space 1}    0.20{col 56}{space 3}0.843{col 64}{space 4} .8329794{col 77}{space 3} 1.250618
+{txt}{space 19}SES {c |}{col 24}{res}{space 2} 1.093711{col 36}{space 2} .0311562{col 47}{space 1}    3.14{col 56}{space 3}0.002{col 64}{space 4} 1.034003{col 77}{space 3} 1.156866
+{txt}{space 8}BMI_beforePreg {c |}{col 24}{res}{space 2} 1.035885{col 36}{space 2} .0087506{col 47}{space 1}    4.17{col 56}{space 3}0.000{col 64}{space 4}  1.01876{col 77}{space 3} 1.053299
+{txt}{space 22} {c |}
+PRETERM#c.Growth_Month {c |}
+{space 20}1  {c |}{col 24}{res}{space 2} .9973774{col 36}{space 2}  .005453{col 47}{space 1}   -0.48{col 56}{space 3}0.632{col 64}{space 4} .9865957{col 77}{space 3} 1.008277
+{txt}{space 20}2  {c |}{col 24}{res}{space 2} .9963257{col 36}{space 2} .0168918{col 47}{space 1}   -0.22{col 56}{space 3}0.829{col 64}{space 4} .9632941{col 77}{space 3}  1.03049
+{txt}{space 20}3  {c |}{col 24}{res}{space 2} .9825569{col 36}{space 2} .0193219{col 47}{space 1}   -0.89{col 56}{space 3}0.371{col 64}{space 4} .9452885{col 77}{space 3} 1.021295
+{txt}{space 22} {c |}
+{space 17}_cons {c |}{col 24}{res}{space 2}  .011675{col 36}{space 2} .0042974{col 47}{space 1}  -12.09{col 56}{space 3}0.000{col 64}{space 4} .0056573{col 77}{space 3}  .024094
+{txt}{hline 23}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. mi test 1.PRETERM#c.Growth_Month 2.PRETERM#c.Growth_Month 3.PRETERM#c.Growth_Month
+{txt}note: assuming equal fractions of missing information.
+{res}
+{p 0 7}{space 1}{text:( 1)}{space 1} 1.PRETERM#c.Growth_Month = 0{p_end}
+{p 0 7}{space 1}{text:( 2)}{space 1} 2.PRETERM#c.Growth_Month = 0{p_end}
+{p 0 7}{space 1}{text:( 3)}{space 1} 3.PRETERM#c.Growth_Month = 0{p_end}
+
+{txt}       F(  3, 304.9) ={res}    0.30
+{txt}{col 13}Prob > F ={res}    0.8261
+
+{com}.  mi estimate, dots post eform: xtgee obesity i.PRETERM  c.Growth_Month i.center c.Age SEX c.GRAVID ANXIETY CHRONIC_DISEASE DailySmoking SGA CongMal c.TWIN GDM_final c.SES c.BMI_beforePreg  i.PRETERM#SGA, family(binomial) link(logit) corr(exchangeable)
+{res}
+{txt}Imputations ({res:20}):
+{col 3}{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}{bf:x}
+{err}{bf:mi estimate}: omitted terms vary
+{p 4 4 2}The set of omitted variables or categories is not 
+consistent between {it:m}=1 and {it:m}=9; 
+this is not allowed.  To identify varying sets, you can use
+{helpb mi xeq} to run the command on individual imputations 
+or you can reissue the command with {bf:mi estimate, noisily}{p_end}
+{txt}{search r(498), local:r(498);}
+
+{com}.  mi test  1.PRETERM#1.SGA 2.PRETERM#1.SGA 3.PRETERM#1.SGA
+{txt}note: assuming equal fractions of missing information.
+{res}{bf}{err}1.PRETERM#1.SGA{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}.  mi estimate, dots post eform: xtgee obesity i.PRETERM  c.Growth_Month i.center c.Age SEX c.GRAVID ANXIETY CHRONIC_DISEASE DailySmoking SGA CongMal c.TWIN GDM_final c.SES c.BMI_beforePreg  i.PRETERM#c.TWIN, family(binomial) link(logit) corr(exchangeable)
+{res}
+{txt}Imputations ({res:20}):
+{col 3}{res}{err}convergence not achieved
+{res}{err}{p 0}
+an error occurred when {bf:mi} {bf:estimate} executed 
+{bf:xtgee}{err} on {it:m}=1
+{p_end}
+{txt}{search r(430), local:r(430);}
+
+{com}. mi test 1.PRETERM#c.TWIN 2.PRETERM#c.TWIN 3.PRETERM#c.TWIN
+{txt}note: assuming equal fractions of missing information.
+{res}{bf}{err}1.PRETERM#c.TWIN{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}.  mi estimate, dots post eform: xtgee obesity i.PRETERM  c.Growth_Month i.center c.Age SEX c.GRAVID ANXIETY CHRONIC_DISEASE DailySmoking SGA CongMal c.TWIN GDM_final c.SES c.BMI_beforePreg  i.PRETERM#SEX, family(binomial) link(logit) corr(exchangeable)
+{res}
+{txt}Imputations ({res:20}):
+{col 3}{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}10{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}20 done
+{res}
+{txt}Multiple-imputation estimates{col 49}Imputations{col 67}= {res}        20
+{txt}GEE population-averaged model{col 49}Number of obs{col 67}= {res}    51,532
+
+{txt}Group variable:{ralign 27:{res:id}}{col 49}Number of groups{col 67}= {res}     6,442
+{txt}Link:{ralign 37:{res:logit}}{col 49}Obs per group:
+Family:{ralign 35:{res:binomial}}{col 49}              min{col 67}= {res}         4
+{txt}Correlation:{ralign 30:{res:exchangeable}}{col 49}              avg{col 67}= {res}       8.0
+{txt}Scale parameter:{ralign 26:{res:1}}{col 49}              max{col 67}= {res}         8
+
+{txt}{col 49}Average RVI{col 67}= {res}    1.2973
+{txt}{col 49}Largest FMI{col 67}= {res}    0.9078
+{txt}DF adjustment:{ralign 28: {res:Large sample}}{col 49}DF:     min{col 67}= {res}     23.44
+{txt}{col 49}        avg{col 67}= {res}    279.14
+{txt}{col 49}        max{col 67}= {res}    917.13
+{txt}Model F test:{ralign 29: {res:Equal FMI}}{col 49}F({res}  22{txt},{res} 1457.7{txt}){col 67}= {res}     11.51
+{txt}Within VCE type: {ralign 25:{res:Conventional}}{col 49}Prob > F{col 67}= {res}    0.0000
+
+{txt}{hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}        obesity{col 17}{c |}     exp(b){col 29}   Std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
+{hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}PRETERM {c |}
+{space 13}1  {c |}{col 17}{res}{space 2} .8035415{col 29}{space 2} .1731109{col 40}{space 1}   -1.02{col 49}{space 3}0.313{col 57}{space 4} .5235696{col 70}{space 3} 1.233225
+{txt}{space 13}2  {c |}{col 17}{res}{space 2} .7905638{col 29}{space 2}  .393026{col 40}{space 1}   -0.47{col 49}{space 3}0.637{col 57}{space 4} .2966745{col 70}{space 3} 2.106656
+{txt}{space 13}3  {c |}{col 17}{res}{space 2} .8332453{col 29}{space 2} .5423597{col 40}{space 1}   -0.28{col 49}{space 3}0.779{col 57}{space 4} .2320567{col 70}{space 3} 2.991931
+{txt}{space 15} {c |}
+{space 3}Growth_Month {c |}{col 17}{res}{space 2}  1.02093{col 29}{space 2} .0034487{col 40}{space 1}    6.13{col 49}{space 3}0.000{col 57}{space 4} 1.013828{col 70}{space 3} 1.028081
+{txt}{space 15} {c |}
+{space 9}center {c |}
+{space 10}Yazd  {c |}{col 17}{res}{space 2} .8661171{col 29}{space 2} .1209781{col 40}{space 1}   -1.03{col 49}{space 3}0.309{col 57}{space 4} .6537095{col 70}{space 3} 1.147542
+{txt}{space 5}Rafsanjan  {c |}{col 17}{res}{space 2}  1.31437{col 29}{space 2} .2233812{col 40}{space 1}    1.61{col 49}{space 3}0.115{col 57}{space 4} .9331769{col 70}{space 3} 1.851275
+{txt}{space 8}Semnan  {c |}{col 17}{res}{space 2} 1.638204{col 29}{space 2} .3027642{col 40}{space 1}    2.67{col 49}{space 3}0.012{col 57}{space 4} 1.123681{col 70}{space 3} 2.388324
+{txt}{space 15} {c |}
+{space 12}Age {c |}{col 17}{res}{space 2} .9995832{col 29}{space 2} .0085118{col 40}{space 1}   -0.05{col 49}{space 3}0.961{col 57}{space 4}  .982909{col 70}{space 3}  1.01654
+{txt}{space 12}SEX {c |}{col 17}{res}{space 2} .5457839{col 29}{space 2} .7191671{col 40}{space 1}   -0.46{col 49}{space 3}0.646{col 57}{space 4} .0410862{col 70}{space 3} 7.250125
+{txt}{space 9}GRAVID {c |}{col 17}{res}{space 2} .9609216{col 29}{space 2} .0431773{col 40}{space 1}   -0.89{col 49}{space 3}0.377{col 57}{space 4} .8791264{col 70}{space 3} 1.050327
+{txt}{space 8}ANXIETY {c |}{col 17}{res}{space 2} .9349807{col 29}{space 2}  .161369{col 40}{space 1}   -0.39{col 49}{space 3}0.698{col 57}{space 4} .6643866{col 70}{space 3} 1.315783
+{txt}CHRONIC_DISEASE {c |}{col 17}{res}{space 2} .9449928{col 29}{space 2} .0755382{col 40}{space 1}   -0.71{col 49}{space 3}0.480{col 57}{space 4} .8071606{col 70}{space 3} 1.106361
+{txt}{space 3}DailySmoking {c |}{col 17}{res}{space 2} .5639355{col 29}{space 2} .4544433{col 40}{space 1}   -0.71{col 49}{space 3}0.478{col 57}{space 4} .1150233{col 70}{space 3} 2.764861
+{txt}{space 12}SGA {c |}{col 17}{res}{space 2} .4798115{col 29}{space 2}  .124524{col 40}{space 1}   -2.83{col 49}{space 3}0.005{col 57}{space 4} .2871637{col 70}{space 3} .8016999
+{txt}{space 8}CongMal {c |}{col 17}{res}{space 2} .8151788{col 29}{space 2} .1865318{col 40}{space 1}   -0.89{col 49}{space 3}0.373{col 57}{space 4} .5189359{col 70}{space 3} 1.280537
+{txt}{space 11}TWIN {c |}{col 17}{res}{space 2} .7899235{col 29}{space 2} .2028824{col 40}{space 1}   -0.92{col 49}{space 3}0.360{col 57}{space 4} .4756544{col 70}{space 3} 1.311833
+{txt}{space 6}GDM_final {c |}{col 17}{res}{space 2} 1.019515{col 29}{space 2} .1055553{col 40}{space 1}    0.19{col 49}{space 3}0.852{col 57}{space 4} .8316915{col 70}{space 3} 1.249754
+{txt}{space 12}SES {c |}{col 17}{res}{space 2} 1.093535{col 29}{space 2} .0311416{col 40}{space 1}    3.14{col 49}{space 3}0.002{col 57}{space 4} 1.033853{col 70}{space 3} 1.156664
+{txt}{space 1}BMI_beforePreg {c |}{col 17}{res}{space 2} 1.036117{col 29}{space 2} .0087888{col 40}{space 1}    4.18{col 49}{space 3}0.000{col 57}{space 4} 1.018913{col 70}{space 3} 1.053612
+{txt}{space 15} {c |}
+{space 4}PRETERM#SEX {c |}
+{space 11}0 1  {c |}{col 17}{res}{space 2} 1.311988{col 29}{space 2} 1.730533{col 40}{space 1}    0.21{col 49}{space 3}0.837{col 57}{space 4}  .098509{col 70}{space 3} 17.47367
+{txt}{space 11}1 1  {c |}{col 17}{res}{space 2} 1.648327{col 29}{space 2} 2.193313{col 40}{space 1}    0.38{col 49}{space 3}0.707{col 57}{space 4} .1210354{col 70}{space 3} 22.44782
+{txt}{space 11}2 1  {c |}{col 17}{res}{space 2} .6832401{col 29}{space 2} 1.147843{col 40}{space 1}   -0.23{col 49}{space 3}0.821{col 57}{space 4} .0252144{col 70}{space 3} 18.51393
+{txt}{space 11}3 1  {c |}{col 17}{res}{space 2}        1{col 29}{txt}  (omitted)
+{space 15} {c |}
+{space 10}_cons {c |}{col 17}{res}{space 2} .0119144{col 29}{space 2} .0043809{col 40}{space 1}  -12.05{col 49}{space 3}0.000{col 57}{space 4} .0057785{col 70}{space 3} .0245657
+{txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. mi test  1.PRETERM#1.SEX 2.PRETERM#1.SEX 3.PRETERM#1.SEX
+{txt}note: assuming equal fractions of missing information.
+{res}
+{p 0 7}{space 1}{text:( 1)}{space 1} 1.PRETERM#1.SEX = 0{p_end}
+{p 0 7}{space 1}{text:( 2)}{space 1} 2.PRETERM#1.SEX = 0{p_end}
+{p 0 7}{space 1}{text:( 3)}{space 1} 3o.PRETERM#1o.SEX = 0{p_end}
+{txt}       Constraint 3 dropped
+
+       F(  2, 497.1) ={res}    0.37
+{txt}{col 13}Prob > F ={res}    0.6890
+
+{com}.  mi estimate, dots post eform: xtgee obesity i.PRETERM  c.Growth_Month i.center c.Age SEX c.GRAVID ANXIETY CHRONIC_DISEASE DailySmoking SGA CongMal c.TWIN GDM_final c.SES c.BMI_beforePreg  i.PRETERM#c.BMI_beforePreg , family(binomial) link(logit) corr(exchangeable)
+{res}
+{txt}Imputations ({res:20}):
+{col 3}{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}10{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}20 done
+{res}
+{txt}Multiple-imputation estimates{col 49}Imputations{col 67}= {res}        20
+{txt}GEE population-averaged model{col 49}Number of obs{col 67}= {res}    51,532
+
+{txt}Group variable:{ralign 27:{res:id}}{col 49}Number of groups{col 67}= {res}     6,442
+{txt}Link:{ralign 37:{res:logit}}{col 49}Obs per group:
+Family:{ralign 35:{res:binomial}}{col 49}              min{col 67}= {res}         4
+{txt}Correlation:{ralign 30:{res:exchangeable}}{col 49}              avg{col 67}= {res}       8.0
+{txt}Scale parameter:{ralign 26:{res:1}}{col 49}              max{col 67}= {res}         8
+
+{txt}{col 49}Average RVI{col 67}= {res}    1.2921
+{txt}{col 49}Largest FMI{col 67}= {res}    0.9079
+{txt}DF adjustment:{ralign 28: {res:Large sample}}{col 49}DF:     min{col 67}= {res}     23.44
+{txt}{col 49}        avg{col 67}= {res}    245.73
+{txt}{col 49}        max{col 67}= {res}  1,352.34
+{txt}Model F test:{ralign 29: {res:Equal FMI}}{col 49}F({res}  22{txt},{res} 1463.0{txt}){col 67}= {res}     11.53
+{txt}Within VCE type: {ralign 25:{res:Conventional}}{col 49}Prob > F{col 67}= {res}    0.0000
+
+{txt}{hline 25}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}                 obesity{col 26}{c |}     exp(b){col 38}   Std. err.{col 50}      t{col 58}   P>|t|{col 66}     [95% con{col 79}f. interval]
+{hline 25}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 17}PRETERM {c |}
+{space 22}1  {c |}{col 26}{res}{space 2} 1.146066{col 38}{space 2} .9145711{col 49}{space 1}    0.17{col 58}{space 3}0.865{col 66}{space 4} .2371234{col 79}{space 3}  5.53917
+{txt}{space 22}2  {c |}{col 26}{res}{space 2} .4128169{col 38}{space 2} .9935614{col 49}{space 1}   -0.37{col 58}{space 3}0.714{col 66}{space 4}   .00352{col 79}{space 3} 48.41407
+{txt}{space 22}3  {c |}{col 26}{res}{space 2} 2.369307{col 38}{space 2} 7.858401{col 49}{space 1}    0.26{col 58}{space 3}0.795{col 66}{space 4} .0035389{col 79}{space 3} 1586.257
+{txt}{space 24} {c |}
+{space 12}Growth_Month {c |}{col 26}{res}{space 2}  1.02093{col 38}{space 2} .0034494{col 49}{space 1}    6.13{col 58}{space 3}0.000{col 66}{space 4} 1.013826{col 79}{space 3} 1.028083
+{txt}{space 24} {c |}
+{space 18}center {c |}
+{space 19}Yazd  {c |}{col 26}{res}{space 2} .8677102{col 38}{space 2} .1210937{col 49}{space 1}   -1.02{col 58}{space 3}0.315{col 66}{space 4}  .655092{col 79}{space 3} 1.149336
+{txt}{space 14}Rafsanjan  {c |}{col 26}{res}{space 2} 1.313061{col 38}{space 2} .2231147{col 49}{space 1}    1.60{col 58}{space 3}0.116{col 66}{space 4} .9323258{col 79}{space 3} 1.849279
+{txt}{space 17}Semnan  {c |}{col 26}{res}{space 2} 1.643203{col 38}{space 2} .3033925{col 49}{space 1}    2.69{col 58}{space 3}0.011{col 66}{space 4} 1.127548{col 79}{space 3} 2.394679
+{txt}{space 24} {c |}
+{space 21}Age {c |}{col 26}{res}{space 2} .9998365{col 38}{space 2} .0085373{col 49}{space 1}   -0.02{col 58}{space 3}0.985{col 66}{space 4} .9831116{col 79}{space 3} 1.016846
+{txt}{space 21}SEX {c |}{col 26}{res}{space 2} .7248324{col 38}{space 2} .0627113{col 49}{space 1}   -3.72{col 58}{space 3}0.000{col 66}{space 4} .6102344{col 79}{space 3} .8609513
+{txt}{space 18}GRAVID {c |}{col 26}{res}{space 2} .9609293{col 38}{space 2} .0430888{col 49}{space 1}   -0.89{col 58}{space 3}0.376{col 66}{space 4} .8793038{col 79}{space 3} 1.050132
+{txt}{space 17}ANXIETY {c |}{col 26}{res}{space 2} .9351539{col 38}{space 2} .1616637{col 49}{space 1}   -0.39{col 58}{space 3}0.699{col 66}{space 4} .6641263{col 79}{space 3} 1.316787
+{txt}{space 9}CHRONIC_DISEASE {c |}{col 26}{res}{space 2} .9453021{col 38}{space 2} .0754925{col 49}{space 1}   -0.70{col 58}{space 3}0.482{col 66}{space 4} .8075552{col 79}{space 3} 1.106545
+{txt}{space 12}DailySmoking {c |}{col 26}{res}{space 2} .5618023{col 38}{space 2} .4534301{col 49}{space 1}   -0.71{col 58}{space 3}0.476{col 66}{space 4} .1142912{col 79}{space 3} 2.761558
+{txt}{space 21}SGA {c |}{col 26}{res}{space 2} .4799948{col 38}{space 2} .1244331{col 49}{space 1}   -2.83{col 58}{space 3}0.005{col 66}{space 4} .2874534{col 79}{space 3}  .801504
+{txt}{space 17}CongMal {c |}{col 26}{res}{space 2} .8120116{col 38}{space 2} .1862059{col 49}{space 1}   -0.91{col 58}{space 3}0.365{col 66}{space 4} .5163977{col 79}{space 3} 1.276851
+{txt}{space 20}TWIN {c |}{col 26}{res}{space 2} .8022714{col 38}{space 2} .2037868{col 49}{space 1}   -0.87{col 58}{space 3}0.387{col 66}{space 4} .4858845{col 79}{space 3} 1.324676
+{txt}{space 15}GDM_final {c |}{col 26}{res}{space 2} 1.019863{col 38}{space 2} .1055805{col 49}{space 1}    0.19{col 58}{space 3}0.849{col 66}{space 4} .8319966{col 79}{space 3}  1.25015
+{txt}{space 21}SES {c |}{col 26}{res}{space 2} 1.093451{col 38}{space 2} .0310774{col 49}{space 1}    3.14{col 58}{space 3}0.002{col 66}{space 4} 1.033898{col 79}{space 3} 1.156435
+{txt}{space 10}BMI_beforePreg {c |}{col 26}{res}{space 2} 1.036737{col 38}{space 2} .0090606{col 49}{space 1}    4.13{col 58}{space 3}0.000{col 66}{space 4} 1.019017{col 79}{space 3} 1.054765
+{txt}{space 24} {c |}
+PRETERM#c.BMI_beforePreg {c |}
+{space 22}1  {c |}{col 26}{res}{space 2} .9898063{col 38}{space 2} .0297691{col 49}{space 1}   -0.34{col 58}{space 3}0.734{col 66}{space 4} .9328076{col 79}{space 3} 1.050288
+{txt}{space 22}2  {c |}{col 26}{res}{space 2} 1.019181{col 38}{space 2} .0960678{col 49}{space 1}    0.20{col 58}{space 3}0.841{col 66}{space 4} .8458161{col 79}{space 3}  1.22808
+{txt}{space 22}3  {c |}{col 26}{res}{space 2} .9572011{col 38}{space 2} .1244702{col 49}{space 1}   -0.34{col 58}{space 3}0.737{col 66}{space 4}  .741651{col 79}{space 3} 1.235398
+{txt}{space 24} {c |}
+{space 19}_cons {c |}{col 26}{res}{space 2} .0113976{col 38}{space 2} .0042874{col 49}{space 1}  -11.89{col 58}{space 3}0.000{col 66}{space 4}  .005436{col 79}{space 3} .0238975
+{txt}{hline 25}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. mi test 1.PRETERM#c.BMI_beforePreg 2.PRETERM#c.BMI_beforePreg 3.PRETERM#c.BMI_beforePreg
+{txt}note: assuming equal fractions of missing information.
+{res}
+{p 0 7}{space 1}{text:( 1)}{space 1} 1.PRETERM#c.BMI_beforePreg = 0{p_end}
+{p 0 7}{space 1}{text:( 2)}{space 1} 2.PRETERM#c.BMI_beforePreg = 0{p_end}
+{p 0 7}{space 1}{text:( 3)}{space 1} 3.PRETERM#c.BMI_beforePreg = 0{p_end}
+
+{txt}       F(  3, 618.4) ={res}    0.09
+{txt}{col 13}Prob > F ={res}    0.9672
+
+{com}.  mi estimate, dots post eform: xtgee obesity i.PRETERM  c.Growth_Month i.center c.Age SEX c.GRAVID ANXIETY CHRONIC_DISEASE DailySmoking SGA CongMal c.TWIN GDM_final c.SES c.BMI_beforePreg i.PRETERM#c.Age, family(binomial) link(logit) corr(exchangeable)
+{res}
+{txt}Imputations ({res:20}):
+{col 3}{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}10{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}20 done
+{res}
+{txt}Multiple-imputation estimates{col 49}Imputations{col 67}= {res}        20
+{txt}GEE population-averaged model{col 49}Number of obs{col 67}= {res}    51,532
+
+{txt}Group variable:{ralign 27:{res:id}}{col 49}Number of groups{col 67}= {res}     6,442
+{txt}Link:{ralign 37:{res:logit}}{col 49}Obs per group:
+Family:{ralign 35:{res:binomial}}{col 49}              min{col 67}= {res}         4
+{txt}Correlation:{ralign 30:{res:exchangeable}}{col 49}              avg{col 67}= {res}       8.0
+{txt}Scale parameter:{ralign 26:{res:1}}{col 49}              max{col 67}= {res}         8
+
+{txt}{col 49}Average RVI{col 67}= {res}    1.2939
+{txt}{col 49}Largest FMI{col 67}= {res}    0.9079
+{txt}DF adjustment:{ralign 28: {res:Large sample}}{col 49}DF:     min{col 67}= {res}     23.44
+{txt}{col 49}        avg{col 67}= {res}    170.37
+{txt}{col 49}        max{col 67}= {res}    356.40
+{txt}Model F test:{ralign 29: {res:Equal FMI}}{col 49}F({res}  22{txt},{res} 1461.9{txt}){col 67}= {res}     11.52
+{txt}Within VCE type: {ralign 25:{res:Conventional}}{col 49}Prob > F{col 67}= {res}    0.0000
+
+{txt}{hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}        obesity{col 17}{c |}     exp(b){col 29}   Std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
+{hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}PRETERM {c |}
+{space 13}1  {c |}{col 17}{res}{space 2} 1.111938{col 29}{space 2} .8629566{col 40}{space 1}    0.14{col 49}{space 3}0.891{col 57}{space 4} .2397265{col 70}{space 3} 5.157566
+{txt}{space 13}2  {c |}{col 17}{res}{space 2}  1.74832{col 29}{space 2} 4.200176{col 40}{space 1}    0.23{col 49}{space 3}0.816{col 57}{space 4} .0153359{col 70}{space 3} 199.3111
+{txt}{space 13}3  {c |}{col 17}{res}{space 2} .2601161{col 29}{space 2} .8666201{col 40}{space 1}   -0.40{col 49}{space 3}0.686{col 57}{space 4} .0003711{col 70}{space 3} 182.3248
+{txt}{space 15} {c |}
+{space 3}Growth_Month {c |}{col 17}{res}{space 2} 1.020929{col 29}{space 2} .0034488{col 40}{space 1}    6.13{col 49}{space 3}0.000{col 57}{space 4} 1.013827{col 70}{space 3} 1.028081
+{txt}{space 15} {c |}
+{space 9}center {c |}
+{space 10}Yazd  {c |}{col 17}{res}{space 2} .8673286{col 29}{space 2} .1211096{col 40}{space 1}   -1.02{col 49}{space 3}0.313{col 57}{space 4}  .654696{col 70}{space 3}  1.14902
+{txt}{space 5}Rafsanjan  {c |}{col 17}{res}{space 2} 1.313765{col 29}{space 2} .2234278{col 40}{space 1}    1.60{col 49}{space 3}0.116{col 57}{space 4} .9325363{col 70}{space 3} 1.850844
+{txt}{space 8}Semnan  {c |}{col 17}{res}{space 2} 1.642851{col 29}{space 2} .3034241{col 40}{space 1}    2.69{col 49}{space 3}0.011{col 57}{space 4} 1.127169{col 70}{space 3}  2.39446
+{txt}{space 15} {c |}
+{space 12}Age {c |}{col 17}{res}{space 2} 1.000587{col 29}{space 2} .0090541{col 40}{space 1}    0.06{col 49}{space 3}0.948{col 57}{space 4} .9828362{col 70}{space 3} 1.018658
+{txt}{space 12}SEX {c |}{col 17}{res}{space 2} .7259392{col 29}{space 2} .0628578{col 40}{space 1}   -3.70{col 49}{space 3}0.000{col 57}{space 4} .6110799{col 70}{space 3} .8623876
+{txt}{space 9}GRAVID {c |}{col 17}{res}{space 2} .9611102{col 29}{space 2} .0430571{col 40}{space 1}   -0.89{col 49}{space 3}0.378{col 57}{space 4} .8795494{col 70}{space 3} 1.050234
+{txt}{space 8}ANXIETY {c |}{col 17}{res}{space 2} .9367419{col 29}{space 2} .1618755{col 40}{space 1}   -0.38{col 49}{space 3}0.706{col 57}{space 4} .6653457{col 70}{space 3} 1.318842
+{txt}CHRONIC_DISEASE {c |}{col 17}{res}{space 2} .9452257{col 29}{space 2} .0755337{col 40}{space 1}   -0.70{col 49}{space 3}0.482{col 57}{space 4} .8074074{col 70}{space 3} 1.106569
+{txt}{space 3}DailySmoking {c |}{col 17}{res}{space 2} .5639761{col 29}{space 2} .4543536{col 40}{space 1}   -0.71{col 49}{space 3}0.478{col 57}{space 4} .1150936{col 70}{space 3} 2.763569
+{txt}{space 12}SGA {c |}{col 17}{res}{space 2} .4806262{col 29}{space 2} .1245562{col 40}{space 1}   -2.83{col 49}{space 3}0.005{col 57}{space 4} .2878847{col 70}{space 3} .8024098
+{txt}{space 8}CongMal {c |}{col 17}{res}{space 2}  .813159{col 29}{space 2} .1863504{col 40}{space 1}   -0.90{col 49}{space 3}0.368{col 57}{space 4}  .517291{col 70}{space 3} 1.278251
+{txt}{space 11}TWIN {c |}{col 17}{res}{space 2} .8110294{col 29}{space 2} .2065796{col 40}{space 1}   -0.82{col 49}{space 3}0.412{col 57}{space 4} .4905516{col 70}{space 3} 1.340876
+{txt}{space 6}GDM_final {c |}{col 17}{res}{space 2} 1.021117{col 29}{space 2}  .105783{col 40}{space 1}    0.20{col 49}{space 3}0.840{col 57}{space 4} .8329029{col 70}{space 3} 1.251862
+{txt}{space 12}SES {c |}{col 17}{res}{space 2} 1.093688{col 29}{space 2} .0311251{col 40}{space 1}    3.15{col 49}{space 3}0.002{col 57}{space 4} 1.034041{col 70}{space 3} 1.156776
+{txt}{space 1}BMI_beforePreg {c |}{col 17}{res}{space 2} 1.036178{col 29}{space 2} .0087649{col 40}{space 1}    4.20{col 49}{space 3}0.000{col 57}{space 4} 1.019025{col 70}{space 3} 1.053621
+{txt}{space 15} {c |}
+{space 2}PRETERM#c.Age {c |}
+{space 13}1  {c |}{col 17}{res}{space 2} .9921978{col 29}{space 2} .0246962{col 40}{space 1}   -0.31{col 49}{space 3}0.753{col 57}{space 4} .9446246{col 70}{space 3} 1.042167
+{txt}{space 13}2  {c |}{col 17}{res}{space 2} .9683629{col 29}{space 2} .0764244{col 40}{space 1}   -0.41{col 49}{space 3}0.684{col 57}{space 4} .8288758{col 70}{space 3} 1.131324
+{txt}{space 13}3  {c |}{col 17}{res}{space 2} 1.036585{col 29}{space 2}  .112449{col 40}{space 1}    0.33{col 49}{space 3}0.741{col 57}{space 4} .8374061{col 70}{space 3}  1.28314
+{txt}{space 15} {c |}
+{space 10}_cons {c |}{col 17}{res}{space 2}   .01116{col 29}{space 2} .0042634{col 40}{space 1}  -11.77{col 49}{space 3}0.000{col 57}{space 4} .0052602{col 70}{space 3}  .023677
+{txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. mi test  1.PRETERM#c.Age 2.PRETERM#c.Age 3.PRETERM#c.Age
+{txt}note: assuming equal fractions of missing information.
+{res}
+{p 0 7}{space 1}{text:( 1)}{space 1} 1.PRETERM#c.Age = 0{p_end}
+{p 0 7}{space 1}{text:( 2)}{space 1} 2.PRETERM#c.Age = 0{p_end}
+{p 0 7}{space 1}{text:( 3)}{space 1} 3.PRETERM#c.Age = 0{p_end}
+
+{txt}       F(  3, 599.9) ={res}    0.12
+{txt}{col 13}Prob > F ={res}    0.9464
+
+{com}.  mi estimate, dots post eform: xtgee obesity i.PRETERM  c.Growth_Month i.center c.Age SEX c.GRAVID ANXIETY CHRONIC_DISEASE DailySmoking SGA CongMal c.TWIN GDM_final c.SES c.BMI_beforePreg i.PRETERM#c.SES, family(binomial) link(logit) corr(exchangeable)
+{res}
+{txt}Imputations ({res:20}):
+{col 3}{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}10{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}20 done
+{res}
+{txt}Multiple-imputation estimates{col 49}Imputations{col 67}= {res}        20
+{txt}GEE population-averaged model{col 49}Number of obs{col 67}= {res}    51,532
+
+{txt}Group variable:{ralign 27:{res:id}}{col 49}Number of groups{col 67}= {res}     6,442
+{txt}Link:{ralign 37:{res:logit}}{col 49}Obs per group:
+Family:{ralign 35:{res:binomial}}{col 49}              min{col 67}= {res}         4
+{txt}Correlation:{ralign 30:{res:exchangeable}}{col 49}              avg{col 67}= {res}       8.0
+{txt}Scale parameter:{ralign 26:{res:1}}{col 49}              max{col 67}= {res}         8
+
+{txt}{col 49}Average RVI{col 67}= {res}    1.3038
+{txt}{col 49}Largest FMI{col 67}= {res}    0.9079
+{txt}DF adjustment:{ralign 28: {res:Large sample}}{col 49}DF:     min{col 67}= {res}     23.44
+{txt}{col 49}        avg{col 67}= {res}    179.85
+{txt}{col 49}        max{col 67}= {res}    544.01
+{txt}Model F test:{ralign 29: {res:Equal FMI}}{col 49}F({res}  22{txt},{res} 1447.9{txt}){col 67}= {res}     11.53
+{txt}Within VCE type: {ralign 25:{res:Conventional}}{col 49}Prob > F{col 67}= {res}    0.0000
+
+{txt}{hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}        obesity{col 17}{c |}     exp(b){col 29}   Std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
+{hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}PRETERM {c |}
+{space 13}1  {c |}{col 17}{res}{space 2} .8121802{col 29}{space 2} .2190276{col 40}{space 1}   -0.77{col 49}{space 3}0.442{col 57}{space 4} .4768333{col 70}{space 3}  1.38337
+{txt}{space 13}2  {c |}{col 17}{res}{space 2}  1.93093{col 29}{space 2} 1.118292{col 40}{space 1}    1.14{col 49}{space 3}0.256{col 57}{space 4} .6190085{col 70}{space 3} 6.023325
+{txt}{space 13}3  {c |}{col 17}{res}{space 2} 1.106546{col 29}{space 2}  1.05096{col 40}{space 1}    0.11{col 49}{space 3}0.915{col 57}{space 4} .1709465{col 70}{space 3} 7.162725
+{txt}{space 15} {c |}
+{space 3}Growth_Month {c |}{col 17}{res}{space 2} 1.020934{col 29}{space 2} .0034495{col 40}{space 1}    6.13{col 49}{space 3}0.000{col 57}{space 4}  1.01383{col 70}{space 3} 1.028087
+{txt}{space 15} {c |}
+{space 9}center {c |}
+{space 10}Yazd  {c |}{col 17}{res}{space 2} .8693568{col 29}{space 2} .1214015{col 40}{space 1}   -1.00{col 49}{space 3}0.321{col 57}{space 4}   .65621{col 70}{space 3} 1.151737
+{txt}{space 5}Rafsanjan  {c |}{col 17}{res}{space 2} 1.313301{col 29}{space 2} .2235634{col 40}{space 1}    1.60{col 49}{space 3}0.117{col 57}{space 4} .9318779{col 70}{space 3} 1.850843
+{txt}{space 8}Semnan  {c |}{col 17}{res}{space 2} 1.640298{col 29}{space 2} .3027896{col 40}{space 1}    2.68{col 49}{space 3}0.012{col 57}{space 4} 1.125649{col 70}{space 3} 2.390245
+{txt}{space 15} {c |}
+{space 12}Age {c |}{col 17}{res}{space 2} .9999541{col 29}{space 2} .0085201{col 40}{space 1}   -0.01{col 49}{space 3}0.996{col 57}{space 4} .9832633{col 70}{space 3} 1.016928
+{txt}{space 12}SEX {c |}{col 17}{res}{space 2} .7248979{col 29}{space 2} .0626079{col 40}{space 1}   -3.73{col 49}{space 3}0.000{col 57}{space 4} .6104826{col 70}{space 3} .8607567
+{txt}{space 9}GRAVID {c |}{col 17}{res}{space 2} .9599584{col 29}{space 2} .0428183{col 40}{space 1}   -0.92{col 49}{space 3}0.361{col 57}{space 4} .8788478{col 70}{space 3} 1.048555
+{txt}{space 8}ANXIETY {c |}{col 17}{res}{space 2} .9346046{col 29}{space 2} .1613897{col 40}{space 1}   -0.39{col 49}{space 3}0.696{col 57}{space 4} .6640026{col 70}{space 3} 1.315485
+{txt}CHRONIC_DISEASE {c |}{col 17}{res}{space 2} .9435977{col 29}{space 2} .0754212{col 40}{space 1}   -0.73{col 49}{space 3}0.469{col 57}{space 4} .8059826{col 70}{space 3}  1.10471
+{txt}{space 3}DailySmoking {c |}{col 17}{res}{space 2} .5585134{col 29}{space 2} .4509325{col 40}{space 1}   -0.72{col 49}{space 3}0.472{col 57}{space 4} .1135524{col 70}{space 3} 2.747078
+{txt}{space 12}SGA {c |}{col 17}{res}{space 2} .4783271{col 29}{space 2} .1240711{col 40}{space 1}   -2.84{col 49}{space 3}0.005{col 57}{space 4} .2863633{col 70}{space 3} .7989741
+{txt}{space 8}CongMal {c |}{col 17}{res}{space 2} .8054076{col 29}{space 2} .1844548{col 40}{space 1}   -0.94{col 49}{space 3}0.346{col 57}{space 4} .5125181{col 70}{space 3} 1.265675
+{txt}{space 11}TWIN {c |}{col 17}{res}{space 2} .8117061{col 29}{space 2}  .210249{col 40}{space 1}   -0.81{col 49}{space 3}0.422{col 57}{space 4} .4864858{col 70}{space 3} 1.354339
+{txt}{space 6}GDM_final {c |}{col 17}{res}{space 2} 1.024229{col 29}{space 2} .1064437{col 40}{space 1}    0.23{col 49}{space 3}0.818{col 57}{space 4} .8348719{col 70}{space 3} 1.256535
+{txt}{space 12}SES {c |}{col 17}{res}{space 2} 1.096021{col 29}{space 2}  .032051{col 40}{space 1}    3.14{col 49}{space 3}0.002{col 57}{space 4} 1.034685{col 70}{space 3} 1.160993
+{txt}{space 1}BMI_beforePreg {c |}{col 17}{res}{space 2} 1.036161{col 29}{space 2} .0087718{col 40}{space 1}    4.20{col 49}{space 3}0.000{col 57}{space 4} 1.018993{col 70}{space 3} 1.053619
+{txt}{space 15} {c |}
+{space 2}PRETERM#c.SES {c |}
+{space 13}1  {c |}{col 17}{res}{space 2} 1.036784{col 29}{space 2} .1065756{col 40}{space 1}    0.35{col 49}{space 3}0.726{col 57}{space 4}  .846297{col 70}{space 3} 1.270147
+{txt}{space 13}2  {c |}{col 17}{res}{space 2} .5775037{col 29}{space 2} .1979243{col 40}{space 1}   -1.60{col 49}{space 3}0.112{col 57}{space 4} .2929253{col 70}{space 3} 1.138551
+{txt}{space 13}3  {c |}{col 17}{res}{space 2} .7924288{col 29}{space 2} .4050893{col 40}{space 1}   -0.46{col 49}{space 3}0.649{col 57}{space 4} .2898323{col 70}{space 3} 2.166575
+{txt}{space 15} {c |}
+{space 10}_cons {c |}{col 17}{res}{space 2} .0113492{col 29}{space 2} .0042531{col 40}{space 1}  -11.95{col 49}{space 3}0.000{col 57}{space 4}  .005425{col 70}{space 3} .0237428
+{txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. mi test  1.PRETERM#c.SES 2.PRETERM#c.SES 3.PRETERM#c.SES
+{txt}note: assuming equal fractions of missing information.
+{res}
+{p 0 7}{space 1}{text:( 1)}{space 1} 1.PRETERM#c.SES = 0{p_end}
+{p 0 7}{space 1}{text:( 2)}{space 1} 2.PRETERM#c.SES = 0{p_end}
+{p 0 7}{space 1}{text:( 3)}{space 1} 3.PRETERM#c.SES = 0{p_end}
+
+{txt}       F(  3, 446.9) ={res}    1.06
+{txt}{col 13}Prob > F ={res}    0.3638
+
+{com}.  mi estimate, dots post eform: xtgee obesity i.PRETERM  c.Growth_Month i.center c.Age SEX c.GRAVID ANXIETY CHRONIC_DISEASE DailySmoking SGA CongMal c.TWIN GDM_final c.SES c.BMI_beforePreg  i.PRETERM#CHRONIC_DISEASE, family(binomial) link(logit) corr(exchangeable)
+{res}
+{txt}Imputations ({res:20}):
+{col 3}{res}{txt}.{res}{txt}{bf:x}
+{err}{bf:mi estimate}: omitted terms vary
+{p 4 4 2}The set of omitted variables or categories is not 
+consistent between {it:m}=1 and {it:m}=2; 
+this is not allowed.  To identify varying sets, you can use
+{helpb mi xeq} to run the command on individual imputations 
+or you can reissue the command with {bf:mi estimate, noisily}{p_end}
+{txt}{search r(498), local:r(498);}
+
+{com}.  mi test  1.PRETERM#1.CHRONIC_DISEASE 2.PRETERM#1.CHRONIC_DISEASE 3.PRETERM#1.CHRONIC_DISEASE
+{txt}note: assuming equal fractions of missing information.
+{res}{bf}{err}1.PRETERM#1.CHRONIC_DISEASE{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}.  mi estimate, dots post eform: xtgee obesity i.PRETERM  c.Growth_Month i.center c.Age SEX c.GRAVID ANXIETY CHRONIC_DISEASE DailySmoking SGA CongMal c.TWIN GDM_final c.SES c.BMI_beforePreg  i.PRETERM#DailySmoking, family(binomial) link(logit) corr(exchangeable)
+{res}
+{txt}Imputations ({res:20}):
+{col 3}{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}{bf:x}
+{err}{bf:mi estimate}: omitted terms vary
+{p 4 4 2}The set of omitted variables or categories is not 
+consistent between {it:m}=1 and {it:m}=4; 
+this is not allowed.  To identify varying sets, you can use
+{helpb mi xeq} to run the command on individual imputations 
+or you can reissue the command with {bf:mi estimate, noisily}{p_end}
+{txt}{search r(498), local:r(498);}
+
+{com}. mi test  1.PRETERM#1.DailySmoking 2.PRETERM#1.DailySmoking 3.PRETERM#1.DailySmoking
+{txt}note: assuming equal fractions of missing information.
+{res}{bf}{err}1.PRETERM#1.DailySmoking{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}.  mi estimate, dots post eform: xtgee obesity i.PRETERM  c.Growth_Month i.center c.Age SEX c.GRAVID ANXIETY CHRONIC_DISEASE DailySmoking SGA CongMal c.TWIN GDM_final c.SES c.BMI_beforePreg i.PRETERM#ANXIETY, family(binomial) link(logit) corr(exchangeable)
+{res}
+{txt}Imputations ({res:20}):
+{col 3}{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}{bf:x}
+{err}{bf:mi estimate}: omitted terms vary
+{p 4 4 2}The set of omitted variables or categories is not 
+consistent between {it:m}=1 and {it:m}=5; 
+this is not allowed.  To identify varying sets, you can use
+{helpb mi xeq} to run the command on individual imputations 
+or you can reissue the command with {bf:mi estimate, noisily}{p_end}
+{txt}{search r(498), local:r(498);}
+
+{com}.  mi test 1.PRETERM#1.ANXIETY 2.PRETERM#1.ANXIETY 3.PRETERM#1.ANXIETY
+{txt}note: assuming equal fractions of missing information.
+{res}{bf}{err}1.PRETERM#1.ANXIETY{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}.  mi estimate, dots post eform: xtgee obesity i.PRETERM  c.Growth_Month i.center c.Age SEX c.GRAVID ANXIETY CHRONIC_DISEASE DailySmoking SGA CongMal c.TWIN GDM_final c.SES c.BMI_beforePreg  i.PRETERM#i.center, family(binomial) link(logit) corr(exchangeable)
+{res}
+{txt}Imputations ({res:20}):
+{col 3}{res}{txt}.{res}{txt}{bf:x}
+{err}{bf:mi estimate}: omitted terms vary
+{p 4 4 2}The set of omitted variables or categories is not 
+consistent between {it:m}=1 and {it:m}=2; 
+this is not allowed.  To identify varying sets, you can use
+{helpb mi xeq} to run the command on individual imputations 
+or you can reissue the command with {bf:mi estimate, noisily}{p_end}
+{txt}{search r(498), local:r(498);}
+
+{com}. mi test 1.PRETERM#1.center 1.PRETERM#2.center 1.PRETERM#3.center 2.PRETERM#1.center 2.PRETERM#2.center 2.PRETERM#3.center 3.PRETERM#1.center 3.PRETERM#2.center 3.PRETERM#3.center
+{txt}note: assuming equal fractions of missing information.
+{res}{bf}{err}1.PRETERM#1.center{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}.  mi estimate, dots post eform: xtgee obesity i.PRETERM  c.Growth_Month i.center c.Age SEX c.GRAVID ANXIETY CHRONIC_DISEASE DailySmoking SGA CongMal c.TWIN GDM_final c.SES c.BMI_beforePreg  i.PRETERM#GDM_final, family(binomial) link(logit) corr(exchangeable)
+{res}
+{txt}Imputations ({res:20}):
+{col 3}{res}{txt}.{res}{txt}.{res}{txt}{bf:x}
+{err}{bf:mi estimate}: omitted terms vary
+{p 4 4 2}The set of omitted variables or categories is not 
+consistent between {it:m}=1 and {it:m}=3; 
+this is not allowed.  To identify varying sets, you can use
+{helpb mi xeq} to run the command on individual imputations 
+or you can reissue the command with {bf:mi estimate, noisily}{p_end}
+{txt}{search r(498), local:r(498);}
+
+{com}.  mi test  1.PRETERM#1.GDM_final 2.PRETERM#1.GDM_final 3.PRETERM#1.GDM_final
+{txt}note: assuming equal fractions of missing information.
+{res}{bf}{err}1.PRETERM#1.GDM_final{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}.  mi estimate, dots post eform: xtgee obesity i.PRETERM  c.Growth_Month i.center c.Age SEX c.GRAVID ANXIETY CHRONIC_DISEASE DailySmoking SGA CongMal c.TWIN GDM_final c.SES c.BMI_beforePreg  i.PRETERM#c.GRAVID, family(binomial) link(logit) corr(exchangeable)
+{res}
+{txt}Imputations ({res:20}):
+{col 3}{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}10{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}20 done
+{res}
+{txt}Multiple-imputation estimates{col 49}Imputations{col 67}= {res}        20
+{txt}GEE population-averaged model{col 49}Number of obs{col 67}= {res}    51,532
+
+{txt}Group variable:{ralign 27:{res:id}}{col 49}Number of groups{col 67}= {res}     6,442
+{txt}Link:{ralign 37:{res:logit}}{col 49}Obs per group:
+Family:{ralign 35:{res:binomial}}{col 49}              min{col 67}= {res}         4
+{txt}Correlation:{ralign 30:{res:exchangeable}}{col 49}              avg{col 67}= {res}       8.0
+{txt}Scale parameter:{ralign 26:{res:1}}{col 49}              max{col 67}= {res}         8
+
+{txt}{col 49}Average RVI{col 67}= {res}    1.2995
+{txt}{col 49}Largest FMI{col 67}= {res}    0.9079
+{txt}DF adjustment:{ralign 28: {res:Large sample}}{col 49}DF:     min{col 67}= {res}     23.44
+{txt}{col 49}        avg{col 67}= {res}    175.12
+{txt}{col 49}        max{col 67}= {res}    404.99
+{txt}Model F test:{ralign 29: {res:Equal FMI}}{col 49}F({res}  22{txt},{res} 1453.8{txt}){col 67}= {res}     11.53
+{txt}Within VCE type: {ralign 25:{res:Conventional}}{col 49}Prob > F{col 67}= {res}    0.0000
+
+{txt}{hline 17}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         obesity{col 18}{c |}     exp(b){col 30}   Std. err.{col 42}      t{col 50}   P>|t|{col 58}     [95% con{col 71}f. interval]
+{hline 17}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 9}PRETERM {c |}
+{space 14}1  {c |}{col 18}{res}{space 2} 1.144134{col 30}{space 2} .3111831{col 41}{space 1}    0.50{col 50}{space 3}0.621{col 58}{space 4} .6701323{col 71}{space 3} 1.953408
+{txt}{space 14}2  {c |}{col 18}{res}{space 2}  .756976{col 30}{space 2} .6801548{col 41}{space 1}   -0.31{col 50}{space 3}0.757{col 58}{space 4} .1277985{col 71}{space 3} 4.483718
+{txt}{space 14}3  {c |}{col 18}{res}{space 2} .3766387{col 30}{space 2} .3809824{col 41}{space 1}   -0.97{col 50}{space 3}0.335{col 58}{space 4}  .051544{col 71}{space 3} 2.752146
+{txt}{space 16} {c |}
+{space 4}Growth_Month {c |}{col 18}{res}{space 2} 1.020932{col 30}{space 2} .0034494{col 41}{space 1}    6.13{col 50}{space 3}0.000{col 58}{space 4} 1.013828{col 71}{space 3} 1.028085
+{txt}{space 16} {c |}
+{space 10}center {c |}
+{space 11}Yazd  {c |}{col 18}{res}{space 2} .8670334{col 30}{space 2} .1212806{col 41}{space 1}   -1.02{col 50}{space 3}0.313{col 58}{space 4} .6541313{col 71}{space 3}  1.14923
+{txt}{space 6}Rafsanjan  {c |}{col 18}{res}{space 2} 1.312686{col 30}{space 2} .2235009{col 41}{space 1}    1.60{col 50}{space 3}0.117{col 58}{space 4}  .931381{col 71}{space 3} 1.850096
+{txt}{space 9}Semnan  {c |}{col 18}{res}{space 2} 1.641773{col 30}{space 2} .3030485{col 41}{space 1}    2.69{col 50}{space 3}0.012{col 58}{space 4} 1.126682{col 71}{space 3} 2.392351
+{txt}{space 16} {c |}
+{space 13}Age {c |}{col 18}{res}{space 2} .9998346{col 30}{space 2} .0084993{col 41}{space 1}   -0.02{col 50}{space 3}0.984{col 58}{space 4} .9831877{col 71}{space 3} 1.016763
+{txt}{space 13}SEX {c |}{col 18}{res}{space 2} .7255904{col 30}{space 2} .0626545{col 41}{space 1}   -3.71{col 50}{space 3}0.000{col 58}{space 4} .6110914{col 71}{space 3} .8615429
+{txt}{space 10}GRAVID {c |}{col 18}{res}{space 2} .9693851{col 30}{space 2} .0458423{col 41}{space 1}   -0.66{col 50}{space 3}0.512{col 58}{space 4} .8827415{col 71}{space 3} 1.064533
+{txt}{space 9}ANXIETY {c |}{col 18}{res}{space 2} .9360104{col 30}{space 2} .1617856{col 41}{space 1}   -0.38{col 50}{space 3}0.703{col 58}{space 4} .6647695{col 71}{space 3} 1.317924
+{txt}{space 1}CHRONIC_DISEASE {c |}{col 18}{res}{space 2} .9444961{col 30}{space 2} .0754111{col 41}{space 1}   -0.72{col 50}{space 3}0.475{col 58}{space 4} .8068969{col 71}{space 3}  1.10556
+{txt}{space 4}DailySmoking {c |}{col 18}{res}{space 2} .5672633{col 30}{space 2} .4574072{col 41}{space 1}   -0.70{col 50}{space 3}0.483{col 58}{space 4} .1155848{col 71}{space 3} 2.783997
+{txt}{space 13}SGA {c |}{col 18}{res}{space 2}  .480617{col 30}{space 2} .1246528{col 41}{space 1}   -2.82{col 50}{space 3}0.005{col 58}{space 4} .2877518{col 71}{space 3} .8027497
+{txt}{space 9}CongMal {c |}{col 18}{res}{space 2}  .810774{col 30}{space 2}  .186408{col 41}{space 1}   -0.91{col 50}{space 3}0.363{col 58}{space 4} .5149712{col 71}{space 3} 1.276488
+{txt}{space 12}TWIN {c |}{col 18}{res}{space 2} .8127147{col 30}{space 2} .2087577{col 41}{space 1}   -0.81{col 50}{space 3}0.421{col 58}{space 4} .4893366{col 71}{space 3} 1.349797
+{txt}{space 7}GDM_final {c |}{col 18}{res}{space 2} 1.024216{col 30}{space 2} .1062167{col 41}{space 1}    0.23{col 50}{space 3}0.818{col 58}{space 4} .8352387{col 71}{space 3}  1.25595
+{txt}{space 13}SES {c |}{col 18}{res}{space 2} 1.093963{col 30}{space 2} .0311622{col 41}{space 1}    3.15{col 50}{space 3}0.002{col 58}{space 4} 1.034244{col 71}{space 3}  1.15713
+{txt}{space 2}BMI_beforePreg {c |}{col 18}{res}{space 2} 1.036153{col 30}{space 2} .0087781{col 41}{space 1}    4.19{col 50}{space 3}0.000{col 58}{space 4} 1.018972{col 71}{space 3} 1.053624
+{txt}{space 16} {c |}
+PRETERM#c.GRAVID {c |}
+{space 14}1  {c |}{col 18}{res}{space 2}  .879358{col 30}{space 2} .1115292{col 41}{space 1}   -1.01{col 50}{space 3}0.312{col 58}{space 4} .6846273{col 71}{space 3} 1.129477
+{txt}{space 14}2  {c |}{col 18}{res}{space 2} .9328344{col 30}{space 2} .3394859{col 41}{space 1}   -0.19{col 50}{space 3}0.849{col 58}{space 4} .4539504{col 71}{space 3} 1.916905
+{txt}{space 14}3  {c |}{col 18}{res}{space 2} 1.297253{col 30}{space 2}  .331824{col 41}{space 1}    1.02{col 50}{space 3}0.310{col 58}{space 4} .7845913{col 71}{space 3} 2.144895
+{txt}{space 16} {c |}
+{space 11}_cons {c |}{col 18}{res}{space 2} .0112005{col 30}{space 2} .0041857{col 41}{space 1}  -12.02{col 50}{space 3}0.000{col 58}{space 4} .0053657{col 71}{space 3} .0233804
+{txt}{hline 17}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. mi test 1.PRETERM#c.GRAVID 2.PRETERM#c.GRAVID 3.PRETERM#c.GRAVID
+{txt}note: assuming equal fractions of missing information.
+{res}
+{p 0 7}{space 1}{text:( 1)}{space 1} 1.PRETERM#c.GRAVID = 0{p_end}
+{p 0 7}{space 1}{text:( 2)}{space 1} 2.PRETERM#c.GRAVID = 0{p_end}
+{p 0 7}{space 1}{text:( 3)}{space 1} 3.PRETERM#c.GRAVID = 0{p_end}
+
+{txt}       F(  3, 510.1) ={res}    0.69
+{txt}{col 13}Prob > F ={res}    0.5572
+
+{com}.  mi estimate, dots post eform: xtgee obesity i.PRETERM  c.Growth_Month i.center c.Age SEX c.GRAVID ANXIETY CHRONIC_DISEASE DailySmoking SGA CongMal c.TWIN GDM_final c.SES c.BMI_beforePreg  i.PRETERM#CongMal, family(binomial) link(logit) corr(exchangeable)
+{res}
+{txt}Imputations ({res:20}):
+{col 3}{res}{txt}.{res}{txt}{bf:x}
+{err}{bf:mi estimate}: omitted terms vary
+{p 4 4 2}The set of omitted variables or categories is not 
+consistent between {it:m}=1 and {it:m}=2; 
+this is not allowed.  To identify varying sets, you can use
+{helpb mi xeq} to run the command on individual imputations 
+or you can reissue the command with {bf:mi estimate, noisily}{p_end}
+{txt}{search r(498), local:r(498);}
+
+{com}.  mi test 1.PRETERM#1.CongMal 2.PRETERM#1.CongMal 3.PRETERM#1.CongMal
+{txt}note: assuming equal fractions of missing information.
+{res}{bf}{err}1.PRETERM#1.CongMal{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}.  mi estimate, dots post eform: xtgee obesity i.PRETERM  c.Growth_Month i.center c.Age SEX c.GRAVID ANXIETY CHRONIC_DISEASE DailySmoking SGA CongMal c.TWIN GDM_final c.SES c.BMI_beforePreg , family(binomial) link(logit) corr(exchangeable)
+{res}
+{txt}Imputations ({res:20}):
+{col 3}{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}10{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}20 done
+{res}
+{txt}Multiple-imputation estimates{col 49}Imputations{col 67}= {res}        20
+{txt}GEE population-averaged model{col 49}Number of obs{col 67}= {res}    51,532
+
+{txt}Group variable:{ralign 27:{res:id}}{col 49}Number of groups{col 67}= {res}     6,442
+{txt}Link:{ralign 37:{res:logit}}{col 49}Obs per group:
+Family:{ralign 35:{res:binomial}}{col 49}              min{col 67}= {res}         4
+{txt}Correlation:{ralign 30:{res:exchangeable}}{col 49}              avg{col 67}= {res}       8.0
+{txt}Scale parameter:{ralign 26:{res:1}}{col 49}              max{col 67}= {res}         8
+
+{txt}{col 49}Average RVI{col 67}= {res}    1.4273
+{txt}{col 49}Largest FMI{col 67}= {res}    0.9079
+{txt}DF adjustment:{ralign 28: {res:Large sample}}{col 49}DF:     min{col 67}= {res}     23.44
+{txt}{col 49}        avg{col 67}= {res}    166.67
+{txt}{col 49}        max{col 67}= {res}    493.42
+{txt}Model F test:{ralign 29: {res:Equal FMI}}{col 49}F({res}  19{txt},{res} 1154.0{txt}){col 67}= {res}     12.64
+{txt}Within VCE type: {ralign 25:{res:Conventional}}{col 49}Prob > F{col 67}= {res}    0.0000
+
+{txt}{hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}        obesity{col 17}{c |}     exp(b){col 29}   Std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
+{hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}PRETERM {c |}
+{space 13}1  {c |}{col 17}{res}{space 2} .8843558{col 29}{space 2}  .137181{col 40}{space 1}   -0.79{col 49}{space 3}0.430{col 57}{space 4} .6504956{col 70}{space 3} 1.202291
+{txt}{space 13}2  {c |}{col 17}{res}{space 2} .6805835{col 29}{space 2} .2976456{col 40}{space 1}   -0.88{col 49}{space 3}0.380{col 57}{space 4} .2873562{col 70}{space 3} 1.611916
+{txt}{space 13}3  {c |}{col 17}{res}{space 2}  .785891{col 29}{space 2} .4463201{col 40}{space 1}   -0.42{col 49}{space 3}0.672{col 57}{space 4} .2574914{col 70}{space 3} 2.398623
+{txt}{space 15} {c |}
+{space 3}Growth_Month {c |}{col 17}{res}{space 2} 1.020928{col 29}{space 2}  .003449{col 40}{space 1}    6.13{col 49}{space 3}0.000{col 57}{space 4} 1.013826{col 70}{space 3} 1.028081
+{txt}{space 15} {c |}
+{space 9}center {c |}
+{space 10}Yazd  {c |}{col 17}{res}{space 2} .8675606{col 29}{space 2}  .121236{col 40}{space 1}   -1.02{col 49}{space 3}0.315{col 57}{space 4} .6547171{col 70}{space 3} 1.149598
+{txt}{space 5}Rafsanjan  {c |}{col 17}{res}{space 2} 1.313734{col 29}{space 2} .2235536{col 40}{space 1}    1.60{col 49}{space 3}0.116{col 57}{space 4} .9323133{col 70}{space 3} 1.851198
+{txt}{space 8}Semnan  {c |}{col 17}{res}{space 2} 1.642621{col 29}{space 2} .3035802{col 40}{space 1}    2.69{col 49}{space 3}0.012{col 57}{space 4} 1.126717{col 70}{space 3} 2.394747
+{txt}{space 15} {c |}
+{space 12}Age {c |}{col 17}{res}{space 2} .9997529{col 29}{space 2} .0085089{col 40}{space 1}   -0.03{col 49}{space 3}0.977{col 57}{space 4} .9830854{col 70}{space 3} 1.016703
+{txt}{space 12}SEX {c |}{col 17}{res}{space 2} .7252837{col 29}{space 2}  .062688{col 40}{space 1}   -3.72{col 49}{space 3}0.000{col 57}{space 4} .6107259{col 70}{space 3}   .86133
+{txt}{space 9}GRAVID {c |}{col 17}{res}{space 2} .9610871{col 29}{space 2} .0431143{col 40}{space 1}   -0.88{col 49}{space 3}0.378{col 57}{space 4} .8794135{col 70}{space 3} 1.050346
+{txt}{space 8}ANXIETY {c |}{col 17}{res}{space 2} .9364011{col 29}{space 2} .1617034{col 40}{space 1}   -0.38{col 49}{space 3}0.704{col 57}{space 4} .6652701{col 70}{space 3} 1.318032
+{txt}CHRONIC_DISEASE {c |}{col 17}{res}{space 2} .9450574{col 29}{space 2} .0754978{col 40}{space 1}   -0.71{col 49}{space 3}0.480{col 57}{space 4} .8073017{col 70}{space 3} 1.106319
+{txt}{space 3}DailySmoking {c |}{col 17}{res}{space 2} .5594564{col 29}{space 2} .4516672{col 40}{space 1}   -0.72{col 49}{space 3}0.473{col 57}{space 4}  .113759{col 70}{space 3} 2.751356
+{txt}{space 12}SGA {c |}{col 17}{res}{space 2} .4795585{col 29}{space 2} .1243633{col 40}{space 1}   -2.83{col 49}{space 3}0.005{col 57}{space 4} .2871367{col 70}{space 3}   .80093
+{txt}{space 8}CongMal {c |}{col 17}{res}{space 2} .8119956{col 29}{space 2} .1861714{col 40}{space 1}   -0.91{col 49}{space 3}0.365{col 57}{space 4} .5164297{col 70}{space 3} 1.276721
+{txt}{space 11}TWIN {c |}{col 17}{res}{space 2} .7958302{col 29}{space 2}  .202136{col 40}{space 1}   -0.90{col 49}{space 3}0.370{col 57}{space 4} .4819562{col 70}{space 3} 1.314115
+{txt}{space 6}GDM_final {c |}{col 17}{res}{space 2} 1.019272{col 29}{space 2} .1056032{col 40}{space 1}    0.18{col 49}{space 3}0.854{col 57}{space 4} .8313752{col 70}{space 3} 1.249636
+{txt}{space 12}SES {c |}{col 17}{res}{space 2} 1.093605{col 29}{space 2} .0311699{col 40}{space 1}    3.14{col 49}{space 3}0.002{col 57}{space 4}  1.03387{col 70}{space 3} 1.156792
+{txt}{space 1}BMI_beforePreg {c |}{col 17}{res}{space 2} 1.035956{col 29}{space 2} .0087442{col 40}{space 1}    4.19{col 49}{space 3}0.000{col 57}{space 4} 1.018843{col 70}{space 3} 1.053356
+{txt}{space 10}_cons {c |}{col 17}{res}{space 2} .0117336{col 29}{space 2} .0043108{col 40}{space 1}  -12.10{col 49}{space 3}0.000{col 57}{space 4} .0056938{col 70}{space 3} .0241805
+{txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. mimrgns PRETERM , at(Growth_Month=(2 4 6 12 24 36 48 60)) post eform cmdmargins contrast
+{txt}note: option predict() not specified; predict(xb) assumed
+{res}
+{txt}Multiple-imputation estimates{col 49}Imputations{col 67}= {res}        20
+{txt}Contrasts of predictive margins{col 49}Number of obs{col 67}= {res}    51,532
+{txt}{col 49}Average RVI{col 67}= {res}    0.4503
+{txt}{col 49}Largest FMI{col 67}= {res}    0.4076
+{txt}DF adjustment:{ralign 15: {res:Large sample}}{col 49}DF:     min{col 67}= {res}    120.05
+{txt}{col 49}        avg{col 67}= {res}    273.24
+{txt}Within VCE type: {ralign 12:{res:Delta-method}}{col 49}        max{col 67}= {res}    493.42
+
+{txt}Expression{col 14}: {res}Linear prediction, predict(xb)
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:1._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}2}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:2._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}4}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:3._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}6}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:4._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}12}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:5._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}24}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:6._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}36}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:7._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}48}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:8._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}60}{p_end}
+{p2colreset}{...}
+
+{res}{txt}{hline 15}{c TT}{hline 11}{hline 11}{hline 14}{hline 12}
+{col 16}{c |}     exp(b){col 28}   Std. err.{col 40}     [95% con{col 53}f. interval]
+{hline 15}{c +}{hline 11}{hline 11}{hline 14}{hline 12}
+{space 3}PRETERM@_at {c |}
+(1 vs base) 1  {c |}{col 16}{res}{space 2} .8843558{col 28}{space 2}  .137181{col 39}{space 5} .6504956{col 53}{space 3} 1.202291
+{txt}(1 vs base) 2  {c |}{col 16}{res}{space 2} .8843558{col 28}{space 2}  .137181{col 39}{space 5} .6504956{col 53}{space 3} 1.202291
+{txt}(1 vs base) 3  {c |}{col 16}{res}{space 2} .8843558{col 28}{space 2}  .137181{col 39}{space 5} .6504956{col 53}{space 3} 1.202291
+{txt}(1 vs base) 4  {c |}{col 16}{res}{space 2} .8843558{col 28}{space 2}  .137181{col 39}{space 5} .6504956{col 53}{space 3} 1.202291
+{txt}(1 vs base) 5  {c |}{col 16}{res}{space 2} .8843558{col 28}{space 2}  .137181{col 39}{space 5} .6504956{col 53}{space 3} 1.202291
+{txt}(1 vs base) 6  {c |}{col 16}{res}{space 2} .8843558{col 28}{space 2}  .137181{col 39}{space 5} .6504956{col 53}{space 3} 1.202291
+{txt}(1 vs base) 7  {c |}{col 16}{res}{space 2} .8843558{col 28}{space 2}  .137181{col 39}{space 5} .6504956{col 53}{space 3} 1.202291
+{txt}(1 vs base) 8  {c |}{col 16}{res}{space 2} .8843558{col 28}{space 2}  .137181{col 39}{space 5} .6504956{col 53}{space 3} 1.202291
+{txt}(2 vs base) 1  {c |}{col 16}{res}{space 2} .6805835{col 28}{space 2} .2976456{col 39}{space 5} .2873562{col 53}{space 3} 1.611916
+{txt}(2 vs base) 2  {c |}{col 16}{res}{space 2} .6805835{col 28}{space 2} .2976456{col 39}{space 5} .2873562{col 53}{space 3} 1.611916
+{txt}(2 vs base) 3  {c |}{col 16}{res}{space 2} .6805835{col 28}{space 2} .2976456{col 39}{space 5} .2873562{col 53}{space 3} 1.611916
+{txt}(2 vs base) 4  {c |}{col 16}{res}{space 2} .6805835{col 28}{space 2} .2976456{col 39}{space 5} .2873562{col 53}{space 3} 1.611916
+{txt}(2 vs base) 5  {c |}{col 16}{res}{space 2} .6805835{col 28}{space 2} .2976456{col 39}{space 5} .2873562{col 53}{space 3} 1.611916
+{txt}(2 vs base) 6  {c |}{col 16}{res}{space 2} .6805835{col 28}{space 2} .2976456{col 39}{space 5} .2873562{col 53}{space 3} 1.611916
+{txt}(2 vs base) 7  {c |}{col 16}{res}{space 2} .6805835{col 28}{space 2} .2976456{col 39}{space 5} .2873562{col 53}{space 3} 1.611916
+{txt}(2 vs base) 8  {c |}{col 16}{res}{space 2} .6805835{col 28}{space 2} .2976456{col 39}{space 5} .2873562{col 53}{space 3} 1.611916
+{txt}(3 vs base) 1  {c |}{col 16}{res}{space 2}  .785891{col 28}{space 2} .4463201{col 39}{space 5} .2574914{col 53}{space 3} 2.398623
+{txt}(3 vs base) 2  {c |}{col 16}{res}{space 2}  .785891{col 28}{space 2} .4463201{col 39}{space 5} .2574914{col 53}{space 3} 2.398623
+{txt}(3 vs base) 3  {c |}{col 16}{res}{space 2}  .785891{col 28}{space 2} .4463201{col 39}{space 5} .2574914{col 53}{space 3} 2.398623
+{txt}(3 vs base) 4  {c |}{col 16}{res}{space 2}  .785891{col 28}{space 2} .4463201{col 39}{space 5} .2574914{col 53}{space 3} 2.398623
+{txt}(3 vs base) 5  {c |}{col 16}{res}{space 2}  .785891{col 28}{space 2} .4463201{col 39}{space 5} .2574914{col 53}{space 3} 2.398623
+{txt}(3 vs base) 6  {c |}{col 16}{res}{space 2}  .785891{col 28}{space 2} .4463201{col 39}{space 5} .2574914{col 53}{space 3} 2.398623
+{txt}(3 vs base) 7  {c |}{col 16}{res}{space 2}  .785891{col 28}{space 2} .4463201{col 39}{space 5} .2574914{col 53}{space 3} 2.398623
+{txt}(3 vs base) 8  {c |}{col 16}{res}{space 2}  .785891{col 28}{space 2} .4463201{col 39}{space 5} .2574914{col 53}{space 3} 2.398623
+{txt}{hline 15}{c BT}{hline 11}{hline 11}{hline 14}{hline 12}
+{res}
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\Golnaz\Desktop\preterm\DO\logs\interaction\GEE\Obesity\Obesity_interaction_CENTERED2.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}17 Dec 2024, 16:47:23
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

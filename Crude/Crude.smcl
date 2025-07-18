@@ -1,0 +1,952 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\Golnaz\Desktop\preterm\DO\logs\interaction\GEE\Crude.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}18 Jul 2025, 17:03:41
+
+{com}. 
+. mi estimate, dots post: xtgee zlen i.PRETERM  c.Growth_Month  i.PRETERM#c.Growth_Month, family(gaussian) link(identity) corr(exchangeable)
+{res}
+{txt}Imputations ({res:20}):
+{col 3}{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}10{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}20 done
+{res}
+{txt}Multiple-imputation estimates{col 49}Imputations{col 67}= {res}        20
+{txt}GEE population-averaged model{col 49}Number of obs{col 67}= {res}    57,009
+
+{txt}Group variable:{ralign 27:{res:id}}{col 49}Number of groups{col 67}= {res}     7,129
+{txt}Link:{ralign 37:{res:identity}}{col 49}Obs per group:
+Family:{ralign 35:{res:Gaussian}}{col 49}              min{col 67}= {res}         1
+{txt}Correlation:{ralign 30:{res:exchangeable}}{col 49}              avg{col 67}= {res}       8.0
+{txt}Scale parameter:{ralign 26:{res:x2}}{col 49}              max{col 67}= {res}         8
+
+{txt}{col 49}Average RVI{col 67}= {res}    5.3935
+{txt}{col 49}Largest FMI{col 67}= {res}    0.9738
+{txt}DF adjustment:{ralign 28: {res:Large sample}}{col 49}DF:     min{col 67}= {res}     20.14
+{txt}{col 49}        avg{col 67}= {res}    432.85
+{txt}{col 49}        max{col 67}= {res}  2,389.32
+{txt}Model F test:{ralign 29: {res:Equal FMI}}{col 49}F({res}   7{txt},{res}  180.6{txt}){col 67}= {res}     56.85
+{txt}Within VCE type: {ralign 25:{res:Conventional}}{col 49}Prob > F{col 67}= {res}    0.0000
+
+{txt}{hline 23}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}                  zlen{col 24}{c |}      Coef.{col 36}   Std. Err.{col 48}      t{col 56}   P>|t|{col 64}     [95% Con{col 77}f. Interval]
+{hline 23}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 15}PRETERM {c |}
+{space 20}1  {c |}{col 24}{res}{space 2}-.7142533{col 36}{space 2} .0375288{col 47}{space 1}  -19.03{col 56}{space 3}0.000{col 64}{space 4}-.7878457{col 77}{space 3}-.6406609
+{txt}{space 20}2  {c |}{col 24}{res}{space 2}-1.577075{col 36}{space 2} .1021258{col 47}{space 1}  -15.44{col 56}{space 3}0.000{col 64}{space 4}-1.777814{col 77}{space 3}-1.376336
+{txt}{space 20}3  {c |}{col 24}{res}{space 2}-2.674675{col 36}{space 2} .1607684{col 47}{space 1}  -16.64{col 56}{space 3}0.000{col 64}{space 4}-2.990838{col 77}{space 3}-2.358512
+{txt}{space 22} {c |}
+{space 10}Growth_Month {c |}{col 24}{res}{space 2}-.0090988{col 36}{space 2} .0012821{col 47}{space 1}   -7.10{col 56}{space 3}0.000{col 64}{space 4}-.0117722{col 77}{space 3}-.0064255
+{txt}{space 22} {c |}
+PRETERM#c.Growth_Month {c |}
+{space 20}1  {c |}{col 24}{res}{space 2} .0170554{col 36}{space 2}  .001109{col 47}{space 1}   15.38{col 56}{space 3}0.000{col 64}{space 4}  .014836{col 77}{space 3} .0192748
+{txt}{space 20}2  {c |}{col 24}{res}{space 2} .0360647{col 36}{space 2} .0023982{col 47}{space 1}   15.04{col 56}{space 3}0.000{col 64}{space 4} .0313134{col 77}{space 3}  .040816
+{txt}{space 20}3  {c |}{col 24}{res}{space 2} .0577324{col 36}{space 2} .0046167{col 47}{space 1}   12.51{col 56}{space 3}0.000{col 64}{space 4} .0484667{col 77}{space 3} .0669981
+{txt}{space 22} {c |}
+{space 17}_cons {c |}{col 24}{res}{space 2} .2902342{col 36}{space 2} .0174853{col 47}{space 1}   16.60{col 56}{space 3}0.000{col 64}{space 4} .2550867{col 77}{space 3} .3253817
+{txt}{hline 23}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. 
+. mimrgns PRETERM , at( Growth_Month=(0 2 4 10 22 34 46 58)) contrast 
+{txt}note: option predict() not specified; predict(xb) assumed
+{res}
+{txt}Multiple-imputation estimates{col 49}Imputations{col 67}= {res}        20
+{txt}Contrasts of adjusted predictions{col 49}Number of obs{col 67}= {res}    57,009
+{txt}{col 49}Average RVI{col 67}= {res}    0.7044
+{txt}{col 49}Largest FMI{col 67}= {res}    0.5633
+{txt}DF adjustment:{ralign 15: {res:Large sample}}{col 49}DF:     min{col 67}= {res}     62.89
+{txt}{col 49}        avg{col 67}= {res}    716.19
+{txt}Within VCE type: {ralign 12:{res:Delta-method}}{col 49}        max{col 67}= {res}  2,695.00
+
+{txt}Expression{col 14}: {res}Linear prediction, predict(xb)
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:1._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}0}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:2._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}2}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:3._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}4}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:4._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}10}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:5._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}22}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:6._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}34}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:7._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}46}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:8._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}58}{p_end}
+{p2colreset}{...}
+
+{res}{txt}{hline 15}{c TT}{hline 11}{hline 11}{hline 14}{hline 12}
+{col 16}{c |}   Contrast{col 28}   Std. Err.{col 40}     [95% Con{col 53}f. Interval]
+{hline 15}{c +}{hline 11}{hline 11}{hline 14}{hline 12}
+{space 3}PRETERM@_at {c |}
+(1 vs base) 1  {c |}{col 16}{res}{space 2}-.7142533{col 28}{space 2} .0375288{col 39}{space 5}-.7878457{col 53}{space 3}-.6406609
+{txt}(1 vs base) 2  {c |}{col 16}{res}{space 2}-.6801425{col 28}{space 2} .0367865{col 39}{space 5}-.7522758{col 53}{space 3}-.6080092
+{txt}(1 vs base) 3  {c |}{col 16}{res}{space 2}-.6460317{col 28}{space 2} .0361652{col 39}{space 5} -.716946{col 53}{space 3}-.5751174
+{txt}(1 vs base) 4  {c |}{col 16}{res}{space 2}-.5436993{col 28}{space 2} .0350853{col 39}{space 5}-.6125127{col 53}{space 3}-.4748859
+{txt}(1 vs base) 5  {c |}{col 16}{res}{space 2}-.3390345{col 28}{space 2} .0366434{col 39}{space 5}-.4111088{col 53}{space 3}-.2669601
+{txt}(1 vs base) 6  {c |}{col 16}{res}{space 2}-.1343696{col 28}{space 2} .0425288{col 39}{space 5}-.2185411{col 53}{space 3}-.0501981
+{txt}(1 vs base) 7  {c |}{col 16}{res}{space 2} .0702952{col 28}{space 2} .0512724{col 39}{space 5}  -.03178{col 53}{space 3} .1723703
+{txt}(1 vs base) 8  {c |}{col 16}{res}{space 2}   .27496{col 28}{space 2} .0616702{col 39}{space 5} .1517176{col 53}{space 3} .3982024
+{txt}(2 vs base) 1  {c |}{col 16}{res}{space 2}-1.577075{col 28}{space 2} .1021258{col 39}{space 5}-1.777814{col 53}{space 3}-1.376336
+{txt}(2 vs base) 2  {c |}{col 16}{res}{space 2}-1.504946{col 28}{space 2}  .100119{col 39}{space 5}-1.701722{col 53}{space 3} -1.30817
+{txt}(2 vs base) 3  {c |}{col 16}{res}{space 2}-1.432816{col 28}{space 2} .0983054{col 39}{space 5}-1.626013{col 53}{space 3}-1.239619
+{txt}(2 vs base) 4  {c |}{col 16}{res}{space 2}-1.216428{col 28}{space 2} .0941299{col 39}{space 5}-1.401404{col 53}{space 3}-1.031452
+{txt}(2 vs base) 5  {c |}{col 16}{res}{space 2}-.7836513{col 28}{space 2} .0921722{col 39}{space 5}-.9648958{col 53}{space 3}-.6024067
+{txt}(2 vs base) 6  {c |}{col 16}{res}{space 2}-.3508746{col 28}{space 2} .0989311{col 39}{space 5}-.5457378{col 53}{space 3}-.1560115
+{txt}(2 vs base) 7  {c |}{col 16}{res}{space 2}  .081902{col 28}{space 2} .1128511{col 39}{space 5}-.1408307{col 53}{space 3} .3046348
+{txt}(2 vs base) 8  {c |}{col 16}{res}{space 2} .5146787{col 28}{space 2} .1316806{col 39}{space 5} .2543515{col 53}{space 3} .7750059
+{txt}(3 vs base) 1  {c |}{col 16}{res}{space 2}-2.674675{col 28}{space 2} .1607684{col 39}{space 5}-2.990838{col 53}{space 3}-2.358512
+{txt}(3 vs base) 2  {c |}{col 16}{res}{space 2} -2.55921{col 28}{space 2} .1558398{col 39}{space 5}-2.865501{col 53}{space 3} -2.25292
+{txt}(3 vs base) 3  {c |}{col 16}{res}{space 2}-2.443745{col 28}{space 2} .1513146{col 39}{space 5}-2.740986{col 53}{space 3}-2.146505
+{txt}(3 vs base) 4  {c |}{col 16}{res}{space 2}-2.097351{col 28}{space 2} .1405325{col 39}{space 5}-2.373102{col 53}{space 3}  -1.8216
+{txt}(3 vs base) 5  {c |}{col 16}{res}{space 2}-1.404562{col 28}{space 2} .1343862{col 39}{space 5}-1.668178{col 53}{space 3}-1.140946
+{txt}(3 vs base) 6  {c |}{col 16}{res}{space 2}-.7117731{col 28}{space 2} .1500273{col 39}{space 5}-1.006847{col 53}{space 3}-.4166991
+{txt}(3 vs base) 7  {c |}{col 16}{res}{space 2}-.0189842{col 28}{space 2} .1819203{col 39}{space 5}-.3786333{col 53}{space 3} .3406649
+{txt}(3 vs base) 8  {c |}{col 16}{res}{space 2} .6738047{col 28}{space 2} .2232042{col 39}{space 5} .2304273{col 53}{space 3} 1.117182
+{txt}{hline 15}{c BT}{hline 11}{hline 11}{hline 14}{hline 12}
+{res}
+{com}. 
+. mi estimate, dots post eform: xtgee stunting i.PRETERM  c.Growth_Month i.PRETERM#c.Growth_Month , family(binomial) link(logit) corr(exchangeable)
+{res}
+{txt}Imputations ({res:20}):
+{col 3}{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}10{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}20 done
+{res}
+{txt}Multiple-imputation estimates{col 49}Imputations{col 67}= {res}        20
+{txt}GEE population-averaged model{col 49}Number of obs{col 67}= {res}    57,009
+
+{txt}Group variable:{ralign 27:{res:id}}{col 49}Number of groups{col 67}= {res}     7,129
+{txt}Link:{ralign 37:{res:logit}}{col 49}Obs per group:
+Family:{ralign 35:{res:binomial}}{col 49}              min{col 67}= {res}         1
+{txt}Correlation:{ralign 30:{res:exchangeable}}{col 49}              avg{col 67}= {res}       8.0
+{txt}Scale parameter:{ralign 26:{res:1}}{col 49}              max{col 67}= {res}         8
+
+{txt}{col 49}Average RVI{col 67}= {res}    3.9516
+{txt}{col 49}Largest FMI{col 67}= {res}    0.9563
+{txt}DF adjustment:{ralign 28: {res:Large sample}}{col 49}DF:     min{col 67}= {res}     20.95
+{txt}{col 49}        avg{col 67}= {res}    154.99
+{txt}{col 49}        max{col 67}= {res}    526.49
+{txt}Model F test:{ralign 29: {res:Equal FMI}}{col 49}F({res}   7{txt},{res}  207.7{txt}){col 67}= {res}     27.48
+{txt}Within VCE type: {ralign 25:{res:Conventional}}{col 49}Prob > F{col 67}= {res}    0.0000
+
+{txt}{hline 23}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}              stunting{col 24}{c |}     exp(b){col 36}   Std. Err.{col 48}      t{col 56}   P>|t|{col 64}     [95% Con{col 77}f. Interval]
+{hline 23}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 15}PRETERM {c |}
+{space 20}1  {c |}{col 24}{res}{space 2} 5.132842{col 36}{space 2} .5624186{col 47}{space 1}   14.93{col 56}{space 3}0.000{col 64}{space 4} 4.135276{col 77}{space 3} 6.371053
+{txt}{space 20}2  {c |}{col 24}{res}{space 2} 20.10782{col 36}{space 2} 3.488216{col 47}{space 1}   17.30{col 56}{space 3}0.000{col 64}{space 4}  14.2906{col 77}{space 3} 28.29305
+{txt}{space 20}3  {c |}{col 24}{res}{space 2} 55.95559{col 36}{space 2} 12.70532{col 47}{space 1}   17.72{col 56}{space 3}0.000{col 64}{space 4} 35.81985{col 77}{space 3} 87.41043
+{txt}{space 22} {c |}
+{space 10}Growth_Month {c |}{col 24}{res}{space 2} 1.011614{col 36}{space 2}  .005248{col 47}{space 1}    2.23{col 56}{space 3}0.037{col 64}{space 4} 1.000757{col 77}{space 3} 1.022589
+{txt}{space 22} {c |}
+PRETERM#c.Growth_Month {c |}
+{space 20}1  {c |}{col 24}{res}{space 2} .9626447{col 36}{space 2} .0053141{col 47}{space 1}   -6.90{col 56}{space 3}0.000{col 64}{space 4} .9520178{col 77}{space 3} .9733902
+{txt}{space 20}2  {c |}{col 24}{res}{space 2}  .914918{col 36}{space 2} .0150792{col 47}{space 1}   -5.40{col 56}{space 3}0.000{col 64}{space 4} .8852974{col 77}{space 3} .9455296
+{txt}{space 20}3  {c |}{col 24}{res}{space 2} .9159851{col 36}{space 2} .0155303{col 47}{space 1}   -5.18{col 56}{space 3}0.000{col 64}{space 4} .8855233{col 77}{space 3} .9474947
+{txt}{space 22} {c |}
+{space 17}_cons {c |}{col 24}{res}{space 2} .0247043{col 36}{space 2} .0020525{col 47}{space 1}  -44.54{col 56}{space 3}0.000{col 64}{space 4} .0208868{col 77}{space 3} .0292196
+{txt}{hline 23}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. 
+. mimrgns PRETERM , at(Growth_Month=(0 2 4 10 22 34 46 58)) post eform cmdmargins contrast
+{txt}note: option predict() not specified; predict(xb) assumed
+{res}
+{txt}Multiple-imputation estimates{col 49}Imputations{col 67}= {res}        20
+{txt}Contrasts of adjusted predictions{col 49}Number of obs{col 67}= {res}    57,009
+{txt}{col 49}Average RVI{col 67}= {res}    0.8179
+{txt}{col 49}Largest FMI{col 67}= {res}    0.6406
+{txt}DF adjustment:{ralign 15: {res:Large sample}}{col 49}DF:     min{col 67}= {res}     48.47
+{txt}{col 49}        avg{col 67}= {res}    199.11
+{txt}Within VCE type: {ralign 12:{res:Delta-method}}{col 49}        max{col 67}= {res}    558.32
+
+{txt}Expression{col 14}: {res}Linear prediction, predict(xb)
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:1._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}0}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:2._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}2}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:3._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}4}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:4._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}10}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:5._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}22}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:6._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}34}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:7._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}46}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:8._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}58}{p_end}
+{p2colreset}{...}
+
+{res}{txt}{hline 15}{c TT}{hline 11}{hline 11}{hline 14}{hline 12}
+{col 16}{c |}     exp(b){col 28}   Std. Err.{col 40}     [95% Con{col 53}f. Interval]
+{hline 15}{c +}{hline 11}{hline 11}{hline 14}{hline 12}
+{space 3}PRETERM@_at {c |}
+(1 vs base) 1  {c |}{col 16}{res}{space 2} 5.132842{col 28}{space 2} .5624186{col 39}{space 5} 4.135276{col 53}{space 3} 6.371053
+{txt}(1 vs base) 2  {c |}{col 16}{res}{space 2} 4.756527{col 28}{space 2} .4971404{col 39}{space 5}  3.87113{col 53}{space 3}  5.84443
+{txt}(1 vs base) 3  {c |}{col 16}{res}{space 2} 4.407801{col 28}{space 2}   .44266{col 39}{space 5}  3.61678{col 53}{space 3} 5.371825
+{txt}(1 vs base) 4  {c |}{col 16}{res}{space 2} 3.507665{col 28}{space 2} .3333744{col 39}{space 5} 2.908901{col 53}{space 3} 4.229677
+{txt}(1 vs base) 5  {c |}{col 16}{res}{space 2} 2.221316{col 28}{space 2} .2581912{col 39}{space 5} 1.763627{col 53}{space 3} 2.797783
+{txt}(1 vs base) 6  {c |}{col 16}{res}{space 2} 1.406704{col 28}{space 2} .2301327{col 39}{space 5} 1.014078{col 53}{space 3} 1.951343
+{txt}(1 vs base) 7  {c |}{col 16}{res}{space 2} .8908301{col 28}{space 2} .1967794{col 39}{space 5}  .571778{col 53}{space 3} 1.387913
+{txt}(1 vs base) 8  {c |}{col 16}{res}{space 2} .5641403{col 28}{space 2} .1591648{col 39}{space 5} .3199516{col 53}{space 3}  .994695
+{txt}(2 vs base) 1  {c |}{col 16}{res}{space 2} 20.10782{col 28}{space 2} 3.488216{col 39}{space 5}  14.2906{col 53}{space 3} 28.29305
+{txt}(2 vs base) 2  {c |}{col 16}{res}{space 2} 16.83175{col 28}{space 2} 2.745084{col 39}{space 5} 12.21362{col 53}{space 3} 23.19607
+{txt}(2 vs base) 3  {c |}{col 16}{res}{space 2} 14.08944{col 28}{space 2} 2.239988{col 39}{space 5} 10.30789{col 53}{space 3} 19.25828
+{txt}(2 vs base) 4  {c |}{col 16}{res}{space 2}  8.26393{col 28}{space 2} 1.531549{col 39}{space 5} 5.734523{col 53}{space 3} 11.90902
+{txt}(2 vs base) 5  {c |}{col 16}{res}{space 2} 2.842971{col 28}{space 2} .9478791{col 39}{space 5} 1.465346{col 53}{space 3} 5.515752
+{txt}(2 vs base) 6  {c |}{col 16}{res}{space 2}  .978044{col 28}{space 2}  .504628{col 39}{space 5} .3497509{col 53}{space 3} 2.735003
+{txt}(2 vs base) 7  {c |}{col 16}{res}{space 2} .3364684{col 28}{space 2} .2377978{col 39}{space 5} .0821565{col 53}{space 3} 1.377991
+{txt}(2 vs base) 8  {c |}{col 16}{res}{space 2} .1157524{col 28}{space 2} .1042416{col 39}{space 5} .0191869{col 53}{space 3} .6983207
+{txt}(3 vs base) 1  {c |}{col 16}{res}{space 2} 55.95559{col 28}{space 2} 12.70532{col 39}{space 5} 35.81985{col 53}{space 3} 87.41043
+{txt}(3 vs base) 2  {c |}{col 16}{res}{space 2} 46.94834{col 28}{space 2}   10.194{col 39}{space 5} 30.64752{col 53}{space 3} 71.91925
+{txt}(3 vs base) 3  {c |}{col 16}{res}{space 2}   39.391{col 28}{space 2} 8.359438{col 39}{space 5} 25.96072{col 53}{space 3} 59.76918
+{txt}(3 vs base) 4  {c |}{col 16}{res}{space 2}  23.2663{col 28}{space 2} 5.331134{col 39}{space 5} 14.80724{col 53}{space 3} 36.55783
+{txt}(3 vs base) 5  {c |}{col 16}{res}{space 2} 8.116859{col 28}{space 2} 2.921271{col 39}{space 5} 3.964665{col 53}{space 3} 16.61765
+{txt}(3 vs base) 6  {c |}{col 16}{res}{space 2} 2.831709{col 28}{space 2} 1.523199{col 39}{space 5} .9675326{col 53}{space 3} 8.287656
+{txt}(3 vs base) 7  {c |}{col 16}{res}{space 2} .9878916{col 28}{space 2}  .720518{col 39}{space 5} .2301299{col 53}{space 3} 4.240778
+{txt}(3 vs base) 8  {c |}{col 16}{res}{space 2} .3446434{col 28}{space 2} .3191154{col 39}{space 5} .0542057{col 53}{space 3} 2.191267
+{txt}{hline 15}{c BT}{hline 11}{hline 11}{hline 14}{hline 12}
+{res}
+{com}. 
+. mi estimate, dots post: xtgee zwei i.PRETERM  c.Growth_Month i.PRETERM#c.Growth_Month, family(gaussian) link(identity) corr(exchangeable)
+{res}
+{txt}Imputations ({res:20}):
+{col 3}{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}10{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}20 done
+{res}
+{txt}Multiple-imputation estimates{col 49}Imputations{col 67}= {res}        20
+{txt}GEE population-averaged model{col 49}Number of obs{col 67}= {res}    57,012
+
+{txt}Group variable:{ralign 27:{res:id}}{col 49}Number of groups{col 67}= {res}     7,129
+{txt}Link:{ralign 37:{res:identity}}{col 49}Obs per group:
+Family:{ralign 35:{res:Gaussian}}{col 49}              min{col 67}= {res}         3
+{txt}Correlation:{ralign 30:{res:exchangeable}}{col 49}              avg{col 67}= {res}       8.0
+{txt}Scale parameter:{ralign 26:{res:x2}}{col 49}              max{col 67}= {res}         8
+
+{txt}{col 49}Average RVI{col 67}= {res}    3.9625
+{txt}{col 49}Largest FMI{col 67}= {res}    0.9613
+{txt}DF adjustment:{ralign 28: {res:Large sample}}{col 49}DF:     min{col 67}= {res}     20.71
+{txt}{col 49}        avg{col 67}= {res}    413.91
+{txt}{col 49}        max{col 67}= {res}  1,956.78
+{txt}Model F test:{ralign 29: {res:Equal FMI}}{col 49}F({res}   7{txt},{res}  198.7{txt}){col 67}= {res}     35.13
+{txt}Within VCE type: {ralign 25:{res:Conventional}}{col 49}Prob > F{col 67}= {res}    0.0000
+
+{txt}{hline 23}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}                  zwei{col 24}{c |}      Coef.{col 36}   Std. Err.{col 48}      t{col 56}   P>|t|{col 64}     [95% Con{col 77}f. Interval]
+{hline 23}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 15}PRETERM {c |}
+{space 20}1  {c |}{col 24}{res}{space 2} -.533844{col 36}{space 2} .0363342{col 47}{space 1}  -14.69{col 56}{space 3}0.000{col 64}{space 4}-.6051018{col 77}{space 3}-.4625862
+{txt}{space 20}2  {c |}{col 24}{res}{space 2}-1.370921{col 36}{space 2} .0956734{col 47}{space 1}  -14.33{col 56}{space 3}0.000{col 64}{space 4}-1.558772{col 77}{space 3}-1.183069
+{txt}{space 20}3  {c |}{col 24}{res}{space 2}-2.337193{col 36}{space 2} .1553922{col 47}{space 1}  -15.04{col 56}{space 3}0.000{col 64}{space 4}-2.642842{col 77}{space 3}-2.031545
+{txt}{space 22} {c |}
+{space 10}Growth_Month {c |}{col 24}{res}{space 2}-.0035659{col 36}{space 2} .0008347{col 47}{space 1}   -4.27{col 56}{space 3}0.000{col 64}{space 4}-.0053031{col 77}{space 3}-.0018286
+{txt}{space 22} {c |}
+PRETERM#c.Growth_Month {c |}
+{space 20}1  {c |}{col 24}{res}{space 2} .0099735{col 36}{space 2} .0008007{col 47}{space 1}   12.46{col 56}{space 3}0.000{col 64}{space 4} .0083803{col 77}{space 3} .0115666
+{txt}{space 20}2  {c |}{col 24}{res}{space 2} .0227756{col 36}{space 2} .0024352{col 47}{space 1}    9.35{col 56}{space 3}0.000{col 64}{space 4} .0178736{col 77}{space 3} .0276775
+{txt}{space 20}3  {c |}{col 24}{res}{space 2} .0372486{col 36}{space 2} .0033364{col 47}{space 1}   11.16{col 56}{space 3}0.000{col 64}{space 4} .0305905{col 77}{space 3} .0439067
+{txt}{space 22} {c |}
+{space 17}_cons {c |}{col 24}{res}{space 2}-.1266921{col 36}{space 2} .0132805{col 47}{space 1}   -9.54{col 56}{space 3}0.000{col 64}{space 4}-.1529875{col 77}{space 3}-.1003968
+{txt}{hline 23}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. 
+. mimrgns PRETERM , at( Growth_Month=(0 2 4 10 22 34 46 58)) contrast cmdmargins
+{txt}note: option predict() not specified; predict(xb) assumed
+{res}
+{txt}Multiple-imputation estimates{col 49}Imputations{col 67}= {res}        20
+{txt}Contrasts of adjusted predictions{col 49}Number of obs{col 67}= {res}    57,012
+{txt}{col 49}Average RVI{col 67}= {res}    0.7631
+{txt}{col 49}Largest FMI{col 67}= {res}    0.5298
+{txt}DF adjustment:{ralign 15: {res:Large sample}}{col 49}DF:     min{col 67}= {res}     71.14
+{txt}{col 49}        avg{col 67}= {res}    616.46
+{txt}Within VCE type: {ralign 12:{res:Delta-method}}{col 49}        max{col 67}= {res}  1,956.78
+
+{txt}Expression{col 14}: {res}Linear prediction, predict(xb)
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:1._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}0}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:2._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}2}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:3._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}4}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:4._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}10}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:5._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}22}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:6._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}34}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:7._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}46}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:8._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}58}{p_end}
+{p2colreset}{...}
+
+{res}{txt}{hline 15}{c TT}{hline 11}{hline 11}{hline 14}{hline 12}
+{col 16}{c |}   Contrast{col 28}   Std. Err.{col 40}     [95% Con{col 53}f. Interval]
+{hline 15}{c +}{hline 11}{hline 11}{hline 14}{hline 12}
+{space 3}PRETERM@_at {c |}
+(1 vs base) 1  {c |}{col 16}{res}{space 2} -.533844{col 28}{space 2} .0363342{col 39}{space 5}-.6051018{col 53}{space 3}-.4625862
+{txt}(1 vs base) 2  {c |}{col 16}{res}{space 2} -.513897{col 28}{space 2} .0359493{col 39}{space 5}-.5844018{col 53}{space 3}-.4433923
+{txt}(1 vs base) 3  {c |}{col 16}{res}{space 2}-.4939501{col 28}{space 2} .0356323{col 39}{space 5}-.5638364{col 53}{space 3}-.4240637
+{txt}(1 vs base) 4  {c |}{col 16}{res}{space 2}-.4341091{col 28}{space 2} .0351049{col 39}{space 5}-.5029825{col 53}{space 3}-.3652358
+{txt}(1 vs base) 5  {c |}{col 16}{res}{space 2}-.3144272{col 28}{space 2}  .036003{col 39}{space 5}-.3851818{col 53}{space 3}-.2436726
+{txt}(1 vs base) 6  {c |}{col 16}{res}{space 2}-.1947453{col 28}{space 2}  .039303{col 39}{space 5} -.272229{col 53}{space 3}-.1172617
+{txt}(1 vs base) 7  {c |}{col 16}{res}{space 2}-.0750635{col 28}{space 2} .0444734{col 39}{space 5}-.1630514{col 53}{space 3} .0129244
+{txt}(1 vs base) 8  {c |}{col 16}{res}{space 2} .0446184{col 28}{space 2} .0509477{col 39}{space 5}-.0564731{col 53}{space 3}   .14571
+{txt}(2 vs base) 1  {c |}{col 16}{res}{space 2}-1.370921{col 28}{space 2} .0956734{col 39}{space 5}-1.558772{col 53}{space 3}-1.183069
+{txt}(2 vs base) 2  {c |}{col 16}{res}{space 2}-1.325369{col 28}{space 2}  .094022{col 39}{space 5}-1.509942{col 53}{space 3}-1.140796
+{txt}(2 vs base) 3  {c |}{col 16}{res}{space 2}-1.279818{col 28}{space 2} .0925977{col 39}{space 5}-1.461569{col 53}{space 3}-1.098068
+{txt}(2 vs base) 4  {c |}{col 16}{res}{space 2}-1.143165{col 28}{space 2}  .089786{col 39}{space 5}-1.319374{col 53}{space 3}-.9669553
+{txt}(2 vs base) 5  {c |}{col 16}{res}{space 2}-.8698577{col 28}{space 2} .0911967{col 39}{space 5}-1.049088{col 53}{space 3}-.6906275
+{txt}(2 vs base) 6  {c |}{col 16}{res}{space 2}-.5965507{col 28}{space 2} .1013905{col 39}{space 5}-.7966484{col 53}{space 3} -.396453
+{txt}(2 vs base) 7  {c |}{col 16}{res}{space 2}-.3232437{col 28}{space 2} .1181148{col 39}{space 5}-.5576306{col 53}{space 3}-.0888568
+{txt}(2 vs base) 8  {c |}{col 16}{res}{space 2}-.0499367{col 28}{space 2} .1390326{col 39}{space 5}-.3271501{col 53}{space 3} .2272767
+{txt}(3 vs base) 1  {c |}{col 16}{res}{space 2}-2.337193{col 28}{space 2} .1553922{col 39}{space 5}-2.642842{col 53}{space 3}-2.031545
+{txt}(3 vs base) 2  {c |}{col 16}{res}{space 2}-2.262696{col 28}{space 2} .1525253{col 39}{space 5}-2.562613{col 53}{space 3}-1.962779
+{txt}(3 vs base) 3  {c |}{col 16}{res}{space 2}-2.188199{col 28}{space 2} .1499008{col 39}{space 5}-2.482872{col 53}{space 3}-1.893525
+{txt}(3 vs base) 4  {c |}{col 16}{res}{space 2}-1.964707{col 28}{space 2} .1436084{col 39}{space 5}-2.246824{col 53}{space 3}-1.682591
+{txt}(3 vs base) 5  {c |}{col 16}{res}{space 2}-1.517724{col 28}{space 2} .1390469{col 39}{space 5}-1.790769{col 53}{space 3}-1.244679
+{txt}(3 vs base) 6  {c |}{col 16}{res}{space 2}-1.070741{col 28}{space 2} .1457756{col 39}{space 5}-1.357258{col 53}{space 3}-.7842242
+{txt}(3 vs base) 7  {c |}{col 16}{res}{space 2}-.6237578{col 28}{space 2} .1623973{col 39}{space 5}-.9435982{col 53}{space 3}-.3039175
+{txt}(3 vs base) 8  {c |}{col 16}{res}{space 2}-.1767746{col 28}{space 2} .1862822{col 39}{space 5}-.5445814{col 53}{space 3} .1910321
+{txt}{hline 15}{c BT}{hline 11}{hline 11}{hline 14}{hline 12}
+{res}
+{com}. 
+. mi estimate, dots post eform: xtgee underweight i.PRETERM  c.Growth_Month i.PRETERM#c.Growth_Month, family(binomial) link(logit) corr(exchangeable)
+{res}
+{txt}Imputations ({res:20}):
+{col 3}{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}10{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}20 done
+{res}
+{txt}Multiple-imputation estimates{col 49}Imputations{col 67}= {res}        20
+{txt}GEE population-averaged model{col 49}Number of obs{col 67}= {res}    57,012
+
+{txt}Group variable:{ralign 27:{res:id}}{col 49}Number of groups{col 67}= {res}     7,129
+{txt}Link:{ralign 37:{res:logit}}{col 49}Obs per group:
+Family:{ralign 35:{res:binomial}}{col 49}              min{col 67}= {res}         3
+{txt}Correlation:{ralign 30:{res:exchangeable}}{col 49}              avg{col 67}= {res}       8.0
+{txt}Scale parameter:{ralign 26:{res:1}}{col 49}              max{col 67}= {res}         8
+
+{txt}{col 49}Average RVI{col 67}= {res}    1.3601
+{txt}{col 49}Largest FMI{col 67}= {res}    0.8520
+{txt}DF adjustment:{ralign 28: {res:Large sample}}{col 49}DF:     min{col 67}= {res}     26.84
+{txt}{col 49}        avg{col 67}= {res}    269.74
+{txt}{col 49}        max{col 67}= {res}    646.46
+{txt}Model F test:{ralign 29: {res:Equal FMI}}{col 49}F({res}   7{txt},{res}  401.7{txt}){col 67}= {res}     47.44
+{txt}Within VCE type: {ralign 25:{res:Conventional}}{col 49}Prob > F{col 67}= {res}    0.0000
+
+{txt}{hline 23}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}           underweight{col 24}{c |}     exp(b){col 36}   Std. Err.{col 48}      t{col 56}   P>|t|{col 64}     [95% Con{col 77}f. Interval]
+{hline 23}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 15}PRETERM {c |}
+{space 20}1  {c |}{col 24}{res}{space 2} 4.344611{col 36}{space 2} .4342495{col 47}{space 1}   14.70{col 56}{space 3}0.000{col 64}{space 4} 3.570184{col 77}{space 3} 5.287023
+{txt}{space 20}2  {c |}{col 24}{res}{space 2} 14.84289{col 36}{space 2} 2.478027{col 47}{space 1}   16.16{col 56}{space 3}0.000{col 64}{space 4} 10.69408{col 77}{space 3} 20.60125
+{txt}{space 20}3  {c |}{col 24}{res}{space 2} 41.15029{col 36}{space 2} 9.798737{col 47}{space 1}   15.61{col 56}{space 3}0.000{col 64}{space 4} 25.77426{col 77}{space 3} 65.69911
+{txt}{space 22} {c |}
+{space 10}Growth_Month {c |}{col 24}{res}{space 2} 1.013275{col 36}{space 2} .0024009{col 47}{space 1}    5.57{col 56}{space 3}0.000{col 64}{space 4} 1.008359{col 77}{space 3} 1.018215
+{txt}{space 22} {c |}
+PRETERM#c.Growth_Month {c |}
+{space 20}1  {c |}{col 24}{res}{space 2} .9755223{col 36}{space 2} .0030864{col 47}{space 1}   -7.83{col 56}{space 3}0.000{col 64}{space 4} .9694277{col 77}{space 3} .9816553
+{txt}{space 20}2  {c |}{col 24}{res}{space 2}  .957373{col 36}{space 2} .0074279{col 47}{space 1}   -5.61{col 56}{space 3}0.000{col 64}{space 4} .9426258{col 77}{space 3}  .972351
+{txt}{space 20}3  {c |}{col 24}{res}{space 2} .9510202{col 36}{space 2} .0079085{col 47}{space 1}   -6.04{col 56}{space 3}0.000{col 64}{space 4} .9354936{col 77}{space 3} .9668046
+{txt}{space 22} {c |}
+{space 17}_cons {c |}{col 24}{res}{space 2} .0321479{col 36}{space 2} .0018273{col 47}{space 1}  -60.48{col 56}{space 3}0.000{col 64}{space 4} .0287277{col 77}{space 3} .0359753
+{txt}{hline 23}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. 
+. mimrgns PRETERM , at(Growth_Month=(0 2 4 10 22 34 46 58)) post eform cmdmargins contrast
+{txt}note: option predict() not specified; predict(xb) assumed
+{res}
+{txt}Multiple-imputation estimates{col 49}Imputations{col 67}= {res}        20
+{txt}Contrasts of adjusted predictions{col 49}Number of obs{col 67}= {res}    57,012
+{txt}{col 49}Average RVI{col 67}= {res}    0.5607
+{txt}{col 49}Largest FMI{col 67}= {res}    0.5724
+{txt}DF adjustment:{ralign 15: {res:Large sample}}{col 49}DF:     min{col 67}= {res}     60.90
+{txt}{col 49}        avg{col 67}= {res}    383.62
+{txt}Within VCE type: {ralign 12:{res:Delta-method}}{col 49}        max{col 67}= {res}    762.51
+
+{txt}Expression{col 14}: {res}Linear prediction, predict(xb)
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:1._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}0}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:2._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}2}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:3._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}4}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:4._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}10}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:5._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}22}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:6._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}34}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:7._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}46}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:8._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}58}{p_end}
+{p2colreset}{...}
+
+{res}{txt}{hline 15}{c TT}{hline 11}{hline 11}{hline 14}{hline 12}
+{col 16}{c |}     exp(b){col 28}   Std. Err.{col 40}     [95% Con{col 53}f. Interval]
+{hline 15}{c +}{hline 11}{hline 11}{hline 14}{hline 12}
+{space 3}PRETERM@_at {c |}
+(1 vs base) 1  {c |}{col 16}{res}{space 2} 4.344611{col 28}{space 2} .4342495{col 39}{space 5} 3.570184{col 53}{space 3} 5.287023
+{txt}(1 vs base) 2  {c |}{col 16}{res}{space 2} 4.134522{col 28}{space 2} .4013933{col 39}{space 5} 3.416843{col 53}{space 3} 5.002944
+{txt}(1 vs base) 3  {c |}{col 16}{res}{space 2} 3.934592{col 28}{space 2} .3720256{col 39}{space 5} 3.267898{col 53}{space 3} 4.737301
+{txt}(1 vs base) 4  {c |}{col 16}{res}{space 2} 3.390963{col 28}{space 2} .3026448{col 39}{space 5}  2.84593{col 53}{space 3} 4.040378
+{txt}(1 vs base) 5  {c |}{col 16}{res}{space 2} 2.518661{col 28}{space 2} .2277772{col 39}{space 5} 2.108472{col 53}{space 3}  3.00865
+{txt}(1 vs base) 6  {c |}{col 16}{res}{space 2} 1.870753{col 28}{space 2} .1986388{col 39}{space 5} 1.517475{col 53}{space 3} 2.306276
+{txt}(1 vs base) 7  {c |}{col 16}{res}{space 2} 1.389514{col 28}{space 2}  .182514{col 39}{space 5} 1.071878{col 53}{space 3} 1.801277
+{txt}(1 vs base) 8  {c |}{col 16}{res}{space 2} 1.032071{col 28}{space 2} .1667824{col 39}{space 5} .7495999{col 53}{space 3} 1.420986
+{txt}(2 vs base) 1  {c |}{col 16}{res}{space 2} 14.84289{col 28}{space 2} 2.478027{col 39}{space 5} 10.69408{col 53}{space 3} 20.60125
+{txt}(2 vs base) 2  {c |}{col 16}{res}{space 2} 13.60445{col 28}{space 2}  2.20868{col 39}{space 5}  9.89143{col 53}{space 3} 18.71125
+{txt}(2 vs base) 3  {c |}{col 16}{res}{space 2} 12.46934{col 28}{space 2} 1.984312{col 39}{space 5} 9.123714{col 53}{space 3} 17.04178
+{txt}(2 vs base) 4  {c |}{col 16}{res}{space 2} 9.601307{col 28}{space 2} 1.521536{col 39}{space 5} 7.032583{col 53}{space 3} 13.10829
+{txt}(2 vs base) 5  {c |}{col 16}{res}{space 2} 5.692519{col 28}{space 2} 1.105201{col 39}{space 5} 3.877771{col 53}{space 3} 8.356545
+{txt}(2 vs base) 6  {c |}{col 16}{res}{space 2} 3.375037{col 28}{space 2} .8775842{col 39}{space 5} 2.011663{col 53}{space 3}  5.66242
+{txt}(2 vs base) 7  {c |}{col 16}{res}{space 2} 2.001026{col 28}{space 2} .6781835{col 39}{space 5} 1.017117{col 53}{space 3} 3.936719
+{txt}(2 vs base) 8  {c |}{col 16}{res}{space 2} 1.186388{col 28}{space 2} .5025804{col 39}{space 5} .5085454{col 53}{space 3} 2.767732
+{txt}(3 vs base) 1  {c |}{col 16}{res}{space 2} 41.15029{col 28}{space 2} 9.798737{col 39}{space 5} 25.77426{col 53}{space 3} 65.69911
+{txt}(3 vs base) 2  {c |}{col 16}{res}{space 2} 37.21795{col 28}{space 2} 8.622446{col 39}{space 5} 23.60952{col 53}{space 3} 58.67022
+{txt}(3 vs base) 3  {c |}{col 16}{res}{space 2} 33.66138{col 28}{space 2} 7.616539{col 39}{space 5} 21.58192{col 53}{space 3} 52.50175
+{txt}(3 vs base) 4  {c |}{col 16}{res}{space 2} 24.90408{col 28}{space 2} 5.404329{col 39}{space 5} 16.25943{col 53}{space 3} 38.14482
+{txt}(3 vs base) 5  {c |}{col 16}{res}{space 2} 13.63162{col 28}{space 2} 3.162302{col 39}{space 5}  8.63418{col 53}{space 3} 21.52158
+{txt}(3 vs base) 6  {c |}{col 16}{res}{space 2} 7.461476{col 28}{space 2} 2.116439{col 39}{space 5} 4.262541{col 53}{space 3} 13.06114
+{txt}(3 vs base) 7  {c |}{col 16}{res}{space 2} 4.084152{col 28}{space 2} 1.455549{col 39}{space 5} 2.018547{col 53}{space 3} 8.263518
+{txt}(3 vs base) 8  {c |}{col 16}{res}{space 2} 2.235522{col 28}{space 2} .9833413{col 39}{space 5} .9360009{col 53}{space 3} 5.339268
+{txt}{hline 15}{c BT}{hline 11}{hline 11}{hline 14}{hline 12}
+{res}
+{com}. 
+. mi estimate, dots post: xtgee zwfl i.PRETERM  c.Growth_Month i.PRETERM#c.Growth_Month , family(gaussian) link(identity) corr(exchangeable)
+{res}
+{txt}Imputations ({res:20}):
+{col 3}{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}10{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}20 done
+{res}
+{txt}Multiple-imputation estimates{col 49}Imputations{col 67}= {res}        20
+{txt}GEE population-averaged model{col 49}Number of obs{col 67}= {res}    57,009
+
+{txt}Group variable:{ralign 27:{res:id}}{col 49}Number of groups{col 67}= {res}     7,129
+{txt}Link:{ralign 37:{res:identity}}{col 49}Obs per group:
+Family:{ralign 35:{res:Gaussian}}{col 49}              min{col 67}= {res}         1
+{txt}Correlation:{ralign 30:{res:exchangeable}}{col 49}              avg{col 67}= {res}       8.0
+{txt}Scale parameter:{ralign 26:{res:x2}}{col 49}              max{col 67}= {res}         8
+
+{txt}{col 49}Average RVI{col 67}= {res}    6.1439
+{txt}{col 49}Largest FMI{col 67}= {res}    0.9741
+{txt}DF adjustment:{ralign 28: {res:Large sample}}{col 49}DF:     min{col 67}= {res}     20.13
+{txt}{col 49}        avg{col 67}= {res}    189.22
+{txt}{col 49}        max{col 67}= {res}    714.35
+{txt}Model F test:{ralign 29: {res:Equal FMI}}{col 49}F({res}   7{txt},{res}  175.0{txt}){col 67}= {res}      2.53
+{txt}Within VCE type: {ralign 25:{res:Conventional}}{col 49}Prob > F{col 67}= {res}    0.0166
+
+{txt}{hline 23}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}                  zwfl{col 24}{c |}      Coef.{col 36}   Std. Err.{col 48}      t{col 56}   P>|t|{col 64}     [95% Con{col 77}f. Interval]
+{hline 23}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 15}PRETERM {c |}
+{space 20}1  {c |}{col 24}{res}{space 2}-.0133117{col 36}{space 2} .0428369{col 47}{space 1}   -0.31{col 56}{space 3}0.756{col 64}{space 4} -.097413{col 77}{space 3} .0707896
+{txt}{space 20}2  {c |}{col 24}{res}{space 2}-.2830283{col 36}{space 2} .1111666{col 47}{space 1}   -2.55{col 56}{space 3}0.011{col 64}{space 4}-.5014905{col 77}{space 3} -.064566
+{txt}{space 20}3  {c |}{col 24}{res}{space 2}-.3870815{col 36}{space 2}  .191958{col 47}{space 1}   -2.02{col 56}{space 3}0.046{col 64}{space 4}-.7663213{col 77}{space 3}-.0078417
+{txt}{space 22} {c |}
+{space 10}Growth_Month {c |}{col 24}{res}{space 2}-.0006709{col 36}{space 2} .0014619{col 47}{space 1}   -0.46{col 56}{space 3}0.651{col 64}{space 4}-.0037191{col 77}{space 3} .0023774
+{txt}{space 22} {c |}
+PRETERM#c.Growth_Month {c |}
+{space 20}1  {c |}{col 24}{res}{space 2}-.0041298{col 36}{space 2} .0014289{col 47}{space 1}   -2.89{col 56}{space 3}0.006{col 64}{space 4}-.0070119{col 77}{space 3}-.0012476
+{txt}{space 20}2  {c |}{col 24}{res}{space 2}-.0072705{col 36}{space 2} .0039835{col 47}{space 1}   -1.83{col 56}{space 3}0.076{col 64}{space 4}-.0153487{col 77}{space 3} .0008078
+{txt}{space 20}3  {c |}{col 24}{res}{space 2}-.0130727{col 36}{space 2} .0057768{col 47}{space 1}   -2.26{col 56}{space 3}0.029{col 64}{space 4}-.0247358{col 77}{space 3}-.0014096
+{txt}{space 22} {c |}
+{space 17}_cons {c |}{col 24}{res}{space 2}-.3270117{col 36}{space 2} .0188149{col 47}{space 1}  -17.38{col 56}{space 3}0.000{col 64}{space 4}-.3647931{col 77}{space 3}-.2892304
+{txt}{hline 23}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. 
+. mimrgns PRETERM , at( Growth_Month=(0 2 4 10 22 34 46 58)) contrast cmdmargins
+{txt}note: option predict() not specified; predict(xb) assumed
+{res}
+{txt}Multiple-imputation estimates{col 49}Imputations{col 67}= {res}        20
+{txt}Contrasts of adjusted predictions{col 49}Number of obs{col 67}= {res}    57,009
+{txt}{col 49}Average RVI{col 67}= {res}    1.3433
+{txt}{col 49}Largest FMI{col 67}= {res}    0.7252
+{txt}DF adjustment:{ralign 15: {res:Large sample}}{col 49}DF:     min{col 67}= {res}     37.59
+{txt}{col 49}        avg{col 67}= {res}    280.83
+{txt}Within VCE type: {ralign 12:{res:Delta-method}}{col 49}        max{col 67}= {res}    748.97
+
+{txt}Expression{col 14}: {res}Linear prediction, predict(xb)
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:1._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}0}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:2._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}2}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:3._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}4}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:4._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}10}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:5._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}22}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:6._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}34}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:7._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}46}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:8._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}58}{p_end}
+{p2colreset}{...}
+
+{res}{txt}{hline 15}{c TT}{hline 11}{hline 11}{hline 14}{hline 12}
+{col 16}{c |}   Contrast{col 28}   Std. Err.{col 40}     [95% Con{col 53}f. Interval]
+{hline 15}{c +}{hline 11}{hline 11}{hline 14}{hline 12}
+{space 3}PRETERM@_at {c |}
+(1 vs base) 1  {c |}{col 16}{res}{space 2}-.0133117{col 28}{space 2} .0428369{col 39}{space 5} -.097413{col 53}{space 3} .0707896
+{txt}(1 vs base) 2  {c |}{col 16}{res}{space 2}-.0215713{col 28}{space 2} .0419372{col 39}{space 5}-.1038997{col 53}{space 3} .0607572
+{txt}(1 vs base) 3  {c |}{col 16}{res}{space 2}-.0298308{col 28}{space 2} .0412164{col 39}{space 5}-.1107454{col 53}{space 3} .0510838
+{txt}(1 vs base) 4  {c |}{col 16}{res}{space 2}-.0546095{col 28}{space 2} .0402116{col 39}{space 5}-.1336106{col 53}{space 3} .0243916
+{txt}(1 vs base) 5  {c |}{col 16}{res}{space 2}-.1041669{col 28}{space 2} .0435239{col 39}{space 5}-.1901944{col 53}{space 3}-.0181393
+{txt}(1 vs base) 6  {c |}{col 16}{res}{space 2}-.1537242{col 28}{space 2} .0525328{col 39}{space 5}-.2585426{col 53}{space 3}-.0489059
+{txt}(1 vs base) 7  {c |}{col 16}{res}{space 2}-.2032816{col 28}{space 2} .0649082{col 39}{space 5}-.3336975{col 53}{space 3}-.0728657
+{txt}(1 vs base) 8  {c |}{col 16}{res}{space 2} -.252839{col 28}{space 2}  .079085{col 39}{space 5} -.412349{col 53}{space 3}-.0933289
+{txt}(2 vs base) 1  {c |}{col 16}{res}{space 2}-.2830283{col 28}{space 2} .1111666{col 39}{space 5}-.5014905{col 53}{space 3} -.064566
+{txt}(2 vs base) 2  {c |}{col 16}{res}{space 2}-.2975692{col 28}{space 2} .1083965{col 39}{space 5}-.5105332{col 53}{space 3}-.0846052
+{txt}(2 vs base) 3  {c |}{col 16}{res}{space 2}-.3121101{col 28}{space 2} .1061533{col 39}{space 5}-.5206413{col 53}{space 3}-.1035789
+{txt}(2 vs base) 4  {c |}{col 16}{res}{space 2}-.3557328{col 28}{space 2} .1028903{col 39}{space 5}-.5579665{col 53}{space 3}-.1534991
+{txt}(2 vs base) 5  {c |}{col 16}{res}{space 2}-.4429783{col 28}{space 2} .1124712{col 39}{space 5}-.6655642{col 53}{space 3}-.2203923
+{txt}(2 vs base) 6  {c |}{col 16}{res}{space 2}-.5302237{col 28}{space 2} .1388641{col 39}{space 5}-.8080748{col 53}{space 3}-.2523727
+{txt}(2 vs base) 7  {c |}{col 16}{res}{space 2}-.6174692{col 28}{space 2} .1746047{col 39}{space 5}-.9695782{col 53}{space 3}-.2653602
+{txt}(2 vs base) 8  {c |}{col 16}{res}{space 2}-.7047147{col 28}{space 2} .2150826{col 39}{space 5}-1.140282{col 53}{space 3}-.2691475
+{txt}(3 vs base) 1  {c |}{col 16}{res}{space 2}-.3870815{col 28}{space 2}  .191958{col 39}{space 5}-.7663213{col 53}{space 3}-.0078417
+{txt}(3 vs base) 2  {c |}{col 16}{res}{space 2}-.4132269{col 28}{space 2} .1853453{col 39}{space 5}-.7790632{col 53}{space 3}-.0473905
+{txt}(3 vs base) 3  {c |}{col 16}{res}{space 2}-.4393722{col 28}{space 2} .1792341{col 39}{space 5}-.7928358{col 53}{space 3}-.0859086
+{txt}(3 vs base) 4  {c |}{col 16}{res}{space 2}-.5178083{col 28}{space 2} .1644463{col 39}{space 5}-.8414166{col 53}{space 3}-.1942001
+{txt}(3 vs base) 5  {c |}{col 16}{res}{space 2}-.6746806{col 28}{space 2} .1551976{col 39}{space 5}-.9798032{col 53}{space 3}-.3695579
+{txt}(3 vs base) 6  {c |}{col 16}{res}{space 2}-.8315528{col 28}{space 2}  .175331{col 39}{space 5} -1.17768{col 53}{space 3}-.4854254
+{txt}(3 vs base) 7  {c |}{col 16}{res}{space 2} -.988425{col 28}{space 2} .2168099{col 39}{space 5}-1.419295{col 53}{space 3}-.5575545
+{txt}(3 vs base) 8  {c |}{col 16}{res}{space 2}-1.145297{col 28}{space 2} .2699686{col 39}{space 5}-1.684719{col 53}{space 3} -.605875
+{txt}{hline 15}{c BT}{hline 11}{hline 11}{hline 14}{hline 12}
+{res}
+{com}. 
+. mi estimate, dots post eform: xtgee wasting i.PRETERM  c.Growth_Month i.PRETERM#c.Growth_Month, family(binomial) link(logit) corr(exchangeable)
+{res}
+{txt}Imputations ({res:20}):
+{col 3}{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}10{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}20 done
+{res}
+{txt}Multiple-imputation estimates{col 49}Imputations{col 67}= {res}        20
+{txt}GEE population-averaged model{col 49}Number of obs{col 67}= {res}    57,009
+
+{txt}Group variable:{ralign 27:{res:id}}{col 49}Number of groups{col 67}= {res}     7,129
+{txt}Link:{ralign 37:{res:logit}}{col 49}Obs per group:
+Family:{ralign 35:{res:binomial}}{col 49}              min{col 67}= {res}         1
+{txt}Correlation:{ralign 30:{res:exchangeable}}{col 49}              avg{col 67}= {res}       8.0
+{txt}Scale parameter:{ralign 26:{res:1}}{col 49}              max{col 67}= {res}         8
+
+{txt}{col 49}Average RVI{col 67}= {res}    1.6900
+{txt}{col 49}Largest FMI{col 67}= {res}    0.8758
+{txt}DF adjustment:{ralign 28: {res:Large sample}}{col 49}DF:     min{col 67}= {res}     25.32
+{txt}{col 49}        avg{col 67}= {res}    284.46
+{txt}{col 49}        max{col 67}= {res}    988.51
+{txt}Model F test:{ralign 29: {res:Equal FMI}}{col 49}F({res}   7{txt},{res}  356.2{txt}){col 67}= {res}     41.65
+{txt}Within VCE type: {ralign 25:{res:Conventional}}{col 49}Prob > F{col 67}= {res}    0.0000
+
+{txt}{hline 23}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}               wasting{col 24}{c |}     exp(b){col 36}   Std. Err.{col 48}      t{col 56}   P>|t|{col 64}     [95% Con{col 77}f. Interval]
+{hline 23}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 15}PRETERM {c |}
+{space 20}1  {c |}{col 24}{res}{space 2} 1.136875{col 36}{space 2} .1103246{col 47}{space 1}    1.32{col 56}{space 3}0.186{col 64}{space 4}  .939743{col 77}{space 3}  1.37536
+{txt}{space 20}2  {c |}{col 24}{res}{space 2} 1.888996{col 36}{space 2} .3914152{col 47}{space 1}    3.07{col 56}{space 3}0.002{col 64}{space 4} 1.257416{col 77}{space 3} 2.837808
+{txt}{space 20}3  {c |}{col 24}{res}{space 2} 2.529032{col 36}{space 2} .7911389{col 47}{space 1}    2.97{col 56}{space 3}0.003{col 64}{space 4} 1.365152{col 77}{space 3} 4.685194
+{txt}{space 22} {c |}
+{space 10}Growth_Month {c |}{col 24}{res}{space 2} 1.015093{col 36}{space 2}  .001802{col 47}{space 1}    8.44{col 56}{space 3}0.000{col 64}{space 4} 1.011391{col 77}{space 3} 1.018809
+{txt}{space 22} {c |}
+PRETERM#c.Growth_Month {c |}
+{space 20}1  {c |}{col 24}{res}{space 2} 1.003391{col 36}{space 2} .0025378{col 47}{space 1}    1.34{col 56}{space 3}0.183{col 64}{space 4} .9983885{col 77}{space 3} 1.008419
+{txt}{space 20}2  {c |}{col 24}{res}{space 2} 1.003386{col 36}{space 2}   .00558{col 47}{space 1}    0.61{col 56}{space 3}0.544{col 64}{space 4} .9924002{col 77}{space 3} 1.014494
+{txt}{space 20}3  {c |}{col 24}{res}{space 2}  1.00804{col 36}{space 2} .0082802{col 47}{space 1}    0.97{col 56}{space 3}0.332{col 64}{space 4} .9917464{col 77}{space 3} 1.024601
+{txt}{space 22} {c |}
+{space 17}_cons {c |}{col 24}{res}{space 2} .0780009{col 36}{space 2} .0029162{col 47}{space 1}  -68.23{col 56}{space 3}0.000{col 64}{space 4} .0724288{col 77}{space 3} .0840016
+{txt}{hline 23}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. 
+. mimrgns PRETERM , at(Growth_Month=(0 2 4 10 22 34 46 58)) post eform cmdmargins contrast
+{txt}note: option predict() not specified; predict(xb) assumed
+{res}
+{txt}Multiple-imputation estimates{col 49}Imputations{col 67}= {res}        20
+{txt}Contrasts of adjusted predictions{col 49}Number of obs{col 67}= {res}    57,009
+{txt}{col 49}Average RVI{col 67}= {res}    0.5567
+{txt}{col 49}Largest FMI{col 67}= {res}    0.4965
+{txt}DF adjustment:{ralign 15: {res:Large sample}}{col 49}DF:     min{col 67}= {res}     81.03
+{txt}{col 49}        avg{col 67}= {res}    379.77
+{txt}Within VCE type: {ralign 12:{res:Delta-method}}{col 49}        max{col 67}= {res}    988.51
+
+{txt}Expression{col 14}: {res}Linear prediction, predict(xb)
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:1._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}0}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:2._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}2}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:3._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}4}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:4._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}10}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:5._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}22}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:6._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}34}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:7._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}46}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:8._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}58}{p_end}
+{p2colreset}{...}
+
+{res}{txt}{hline 15}{c TT}{hline 11}{hline 11}{hline 14}{hline 12}
+{col 16}{c |}     exp(b){col 28}   Std. Err.{col 40}     [95% Con{col 53}f. Interval]
+{hline 15}{c +}{hline 11}{hline 11}{hline 14}{hline 12}
+{space 3}PRETERM@_at {c |}
+(1 vs base) 1  {c |}{col 16}{res}{space 2} 1.136875{col 28}{space 2} .1103246{col 39}{space 5}  .939743{col 53}{space 3}  1.37536
+{txt}(1 vs base) 2  {c |}{col 16}{res}{space 2} 1.144598{col 28}{space 2} .1076079{col 39}{space 5} .9517658{col 53}{space 3}   1.3765
+{txt}(1 vs base) 3  {c |}{col 16}{res}{space 2} 1.152374{col 28}{space 2} .1050568{col 39}{space 5} .9635973{col 53}{space 3} 1.378135
+{txt}(1 vs base) 4  {c |}{col 16}{res}{space 2} 1.176021{col 28}{space 2} .0986455{col 39}{space 5} .9974802{col 53}{space 3} 1.386519
+{txt}(1 vs base) 5  {c |}{col 16}{res}{space 2} 1.224779{col 28}{space 2} .0938165{col 39}{space 5} 1.053414{col 53}{space 3} 1.424021
+{txt}(1 vs base) 6  {c |}{col 16}{res}{space 2} 1.275559{col 28}{space 2} .1031634{col 39}{space 5} 1.086984{col 53}{space 3} 1.496848
+{txt}(1 vs base) 7  {c |}{col 16}{res}{space 2} 1.328444{col 28}{space 2} .1264269{col 39}{space 5} 1.099598{col 53}{space 3} 1.604917
+{txt}(1 vs base) 8  {c |}{col 16}{res}{space 2} 1.383522{col 28}{space 2} .1602472{col 39}{space 5} 1.098754{col 53}{space 3} 1.742093
+{txt}(2 vs base) 1  {c |}{col 16}{res}{space 2} 1.888996{col 28}{space 2} .3914152{col 39}{space 5} 1.257416{col 53}{space 3} 2.837808
+{txt}(2 vs base) 2  {c |}{col 16}{res}{space 2}  1.90181{col 28}{space 2}  .380644{col 39}{space 5}  1.28368{col 53}{space 3} 2.817589
+{txt}(2 vs base) 3  {c |}{col 16}{res}{space 2} 1.914711{col 28}{space 2} .3704404{col 39}{space 5} 1.309495{col 53}{space 3} 2.799644
+{txt}(2 vs base) 4  {c |}{col 16}{res}{space 2} 1.953943{col 28}{space 2} .3441936{col 39}{space 5} 1.382611{col 53}{space 3} 2.761365
+{txt}(2 vs base) 5  {c |}{col 16}{res}{space 2} 2.034834{col 28}{space 2} .3211455{col 39}{space 5} 1.492122{col 53}{space 3} 2.774942
+{txt}(2 vs base) 6  {c |}{col 16}{res}{space 2} 2.119074{col 28}{space 2}  .352644{col 39}{space 5} 1.526037{col 53}{space 3} 2.942575
+{txt}(2 vs base) 7  {c |}{col 16}{res}{space 2} 2.206802{col 28}{space 2}  .437959{col 39}{space 5} 1.489529{col 53}{space 3} 3.269473
+{txt}(2 vs base) 8  {c |}{col 16}{res}{space 2} 2.298161{col 28}{space 2} .5628615{col 39}{space 5} 1.413397{col 53}{space 3} 3.736774
+{txt}(3 vs base) 1  {c |}{col 16}{res}{space 2} 2.529032{col 28}{space 2} .7911389{col 39}{space 5} 1.365152{col 53}{space 3} 4.685194
+{txt}(3 vs base) 2  {c |}{col 16}{res}{space 2} 2.569862{col 28}{space 2} .7762982{col 39}{space 5} 1.417022{col 53}{space 3}  4.66061
+{txt}(3 vs base) 3  {c |}{col 16}{res}{space 2}  2.61135{col 28}{space 2} .7621551{col 39}{space 5} 1.469309{col 53}{space 3} 4.641059
+{txt}(3 vs base) 4  {c |}{col 16}{res}{space 2}  2.73988{col 28}{space 2} .7260439{col 39}{space 5} 1.625737{col 53}{space 3} 4.617562
+{txt}(3 vs base) 5  {c |}{col 16}{res}{space 2} 3.016227{col 28}{space 2} .7065163{col 39}{space 5} 1.901067{col 53}{space 3} 4.785537
+{txt}(3 vs base) 6  {c |}{col 16}{res}{space 2} 3.320448{col 28}{space 2}  .806171{col 39}{space 5} 2.055302{col 53}{space 3} 5.364359
+{txt}(3 vs base) 7  {c |}{col 16}{res}{space 2} 3.655353{col 28}{space 2} 1.049654{col 39}{space 5} 2.069203{col 53}{space 3} 6.457367
+{txt}(3 vs base) 8  {c |}{col 16}{res}{space 2} 4.024037{col 28}{space 2} 1.424994{col 39}{space 5} 1.992369{col 53}{space 3} 8.127445
+{txt}{hline 15}{c BT}{hline 11}{hline 11}{hline 14}{hline 12}
+{res}
+{com}. 
+. mi estimate, dots post: xtgee zbmi i.PRETERM  c.Growth_Month i.PRETERM#c.Growth_Month, family(gaussian) link(identity) corr(exchangeable)
+{res}
+{txt}Imputations ({res:20}):
+{col 3}{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}10{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}20 done
+{res}
+{txt}Multiple-imputation estimates{col 49}Imputations{col 67}= {res}        20
+{txt}GEE population-averaged model{col 49}Number of obs{col 67}= {res}    57,010
+
+{txt}Group variable:{ralign 27:{res:id}}{col 49}Number of groups{col 67}= {res}     7,129
+{txt}Link:{ralign 37:{res:identity}}{col 49}Obs per group:
+Family:{ralign 35:{res:Gaussian}}{col 49}              min{col 67}= {res}         1
+{txt}Correlation:{ralign 30:{res:exchangeable}}{col 49}              avg{col 67}= {res}       8.0
+{txt}Scale parameter:{ralign 26:{res:x2}}{col 49}              max{col 67}= {res}         8
+
+{txt}{col 49}Average RVI{col 67}= {res}    6.1040
+{txt}{col 49}Largest FMI{col 67}= {res}    0.9736
+{txt}DF adjustment:{ralign 28: {res:Large sample}}{col 49}DF:     min{col 67}= {res}     20.15
+{txt}{col 49}        avg{col 67}= {res}    204.11
+{txt}{col 49}        max{col 67}= {res}    760.56
+{txt}Model F test:{ralign 29: {res:Equal FMI}}{col 49}F({res}   7{txt},{res}  175.2{txt}){col 67}= {res}      2.71
+{txt}Within VCE type: {ralign 25:{res:Conventional}}{col 49}Prob > F{col 67}= {res}    0.0109
+
+{txt}{hline 23}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}                  zbmi{col 24}{c |}      Coef.{col 36}   Std. Err.{col 48}      t{col 56}   P>|t|{col 64}     [95% Con{col 77}f. Interval]
+{hline 23}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 15}PRETERM {c |}
+{space 20}1  {c |}{col 24}{res}{space 2}-.1731046{col 36}{space 2} .0431071{col 47}{space 1}   -4.02{col 56}{space 3}0.000{col 64}{space 4}-.2577276{col 77}{space 3}-.0884816
+{txt}{space 20}2  {c |}{col 24}{res}{space 2}-.6592733{col 36}{space 2} .1110871{col 47}{space 1}   -5.93{col 56}{space 3}0.000{col 64}{space 4}-.8774915{col 77}{space 3} -.441055
+{txt}{space 20}3  {c |}{col 24}{res}{space 2} -1.11909{col 36}{space 2} .1945272{col 47}{space 1}   -5.75{col 56}{space 3}0.000{col 64}{space 4}-1.503537{col 77}{space 3}-.7346434
+{txt}{space 22} {c |}
+{space 10}Growth_Month {c |}{col 24}{res}{space 2} .0009372{col 36}{space 2} .0014544{col 47}{space 1}    0.64{col 56}{space 3}0.527{col 64}{space 4}-.0020952{col 77}{space 3} .0039695
+{txt}{space 22} {c |}
+PRETERM#c.Growth_Month {c |}
+{space 20}1  {c |}{col 24}{res}{space 2}-.0000612{col 36}{space 2} .0014567{col 47}{space 1}   -0.04{col 56}{space 3}0.967{col 64}{space 4}-.0030021{col 77}{space 3} .0028797
+{txt}{space 20}2  {c |}{col 24}{res}{space 2} .0022052{col 36}{space 2} .0040553{col 47}{space 1}    0.54{col 56}{space 3}0.590{col 64}{space 4}-.0060244{col 77}{space 3} .0104348
+{txt}{space 20}3  {c |}{col 24}{res}{space 2} .0049776{col 36}{space 2} .0058381{col 47}{space 1}    0.85{col 56}{space 3}0.399{col 64}{space 4}-.0068139{col 77}{space 3}  .016769
+{txt}{space 22} {c |}
+{space 17}_cons {c |}{col 24}{res}{space 2}-.4029887{col 36}{space 2} .0189459{col 47}{space 1}  -21.27{col 56}{space 3}0.000{col 64}{space 4}-.4410275{col 77}{space 3}-.3649498
+{txt}{hline 23}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. 
+. mimrgns PRETERM , at( Growth_Month=(0 2 4 10 22 34 46 58)) contrast cmdmargins
+{txt}note: option predict() not specified; predict(xb) assumed
+{res}
+{txt}Multiple-imputation estimates{col 49}Imputations{col 67}= {res}        20
+{txt}Contrasts of adjusted predictions{col 49}Number of obs{col 67}= {res}    57,010
+{txt}{col 49}Average RVI{col 67}= {res}    1.3950
+{txt}{col 49}Largest FMI{col 67}= {res}    0.7339
+{txt}DF adjustment:{ralign 15: {res:Large sample}}{col 49}DF:     min{col 67}= {res}     36.67
+{txt}{col 49}        avg{col 67}= {res}    291.88
+{txt}Within VCE type: {ralign 12:{res:Delta-method}}{col 49}        max{col 67}= {res}    802.19
+
+{txt}Expression{col 14}: {res}Linear prediction, predict(xb)
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:1._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}0}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:2._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}2}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:3._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}4}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:4._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}10}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:5._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}22}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:6._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}34}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:7._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}46}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:8._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}58}{p_end}
+{p2colreset}{...}
+
+{res}{txt}{hline 15}{c TT}{hline 11}{hline 11}{hline 14}{hline 12}
+{col 16}{c |}   Contrast{col 28}   Std. Err.{col 40}     [95% Con{col 53}f. Interval]
+{hline 15}{c +}{hline 11}{hline 11}{hline 14}{hline 12}
+{space 3}PRETERM@_at {c |}
+(1 vs base) 1  {c |}{col 16}{res}{space 2}-.1731046{col 28}{space 2} .0431071{col 39}{space 5}-.2577276{col 53}{space 3}-.0884816
+{txt}(1 vs base) 2  {c |}{col 16}{res}{space 2} -.173227{col 28}{space 2}  .042202{col 39}{space 5}-.2560664{col 53}{space 3}-.0903877
+{txt}(1 vs base) 3  {c |}{col 16}{res}{space 2}-.1733495{col 28}{space 2} .0414822{col 39}{space 5} -.254777{col 53}{space 3} -.091922
+{txt}(1 vs base) 4  {c |}{col 16}{res}{space 2}-.1737169{col 28}{space 2} .0405206{col 39}{space 5}-.2533173{col 53}{space 3}-.0941165
+{txt}(1 vs base) 5  {c |}{col 16}{res}{space 2}-.1744518{col 28}{space 2} .0440748{col 39}{space 5}-.2615782{col 53}{space 3}-.0873254
+{txt}(1 vs base) 6  {c |}{col 16}{res}{space 2}-.1751866{col 28}{space 2} .0534268{col 39}{space 5}-.2818347{col 53}{space 3}-.0685386
+{txt}(1 vs base) 7  {c |}{col 16}{res}{space 2}-.1759215{col 28}{space 2}  .066162{col 39}{space 5}-.3089383{col 53}{space 3}-.0429046
+{txt}(1 vs base) 8  {c |}{col 16}{res}{space 2}-.1766563{col 28}{space 2} .0806942{col 39}{space 5} -.339527{col 53}{space 3}-.0137856
+{txt}(2 vs base) 1  {c |}{col 16}{res}{space 2}-.6592733{col 28}{space 2} .1110871{col 39}{space 5}-.8774915{col 53}{space 3} -.441055
+{txt}(2 vs base) 2  {c |}{col 16}{res}{space 2}-.6548628{col 28}{space 2} .1083739{col 39}{space 5}-.8677026{col 53}{space 3}-.4420231
+{txt}(2 vs base) 3  {c |}{col 16}{res}{space 2}-.6504524{col 28}{space 2}  .106212{col 39}{space 5}-.8590268{col 53}{space 3} -.441878
+{txt}(2 vs base) 4  {c |}{col 16}{res}{space 2}-.6372211{col 28}{space 2} .1033377{col 39}{space 5}-.8402847{col 53}{space 3}-.4341575
+{txt}(2 vs base) 5  {c |}{col 16}{res}{space 2}-.6107585{col 28}{space 2} .1141326{col 39}{space 5} -.836688{col 53}{space 3}-.3848291
+{txt}(2 vs base) 6  {c |}{col 16}{res}{space 2}-.5842959{col 28}{space 2}   .14181{col 39}{space 5}-.8682369{col 53}{space 3} -.300355
+{txt}(2 vs base) 7  {c |}{col 16}{res}{space 2}-.5578333{col 28}{space 2} .1786901{col 39}{space 5}-.9184746{col 53}{space 3}-.1971921
+{txt}(2 vs base) 8  {c |}{col 16}{res}{space 2}-.5313708{col 28}{space 2} .2201964{col 39}{space 5}-.9776656{col 53}{space 3}-.0850759
+{txt}(3 vs base) 1  {c |}{col 16}{res}{space 2} -1.11909{col 28}{space 2} .1945272{col 39}{space 5}-1.503537{col 53}{space 3}-.7346434
+{txt}(3 vs base) 2  {c |}{col 16}{res}{space 2}-1.109135{col 28}{space 2} .1880695{col 39}{space 5}-1.480495{col 53}{space 3}-.7377756
+{txt}(3 vs base) 3  {c |}{col 16}{res}{space 2} -1.09918{col 28}{space 2}  .182132{col 39}{space 5} -1.45852{col 53}{space 3}-.7398401
+{txt}(3 vs base) 4  {c |}{col 16}{res}{space 2}-1.069315{col 28}{space 2} .1679699{col 39}{space 5}-1.400063{col 53}{space 3}-.7385665
+{txt}(3 vs base) 5  {c |}{col 16}{res}{space 2}-1.009584{col 28}{space 2} .1601857{col 39}{space 5}-1.324837{col 53}{space 3}-.6943311
+{txt}(3 vs base) 6  {c |}{col 16}{res}{space 2}-.9498534{col 28}{space 2} .1814413{col 39}{space 5}-1.308565{col 53}{space 3}-.5911416
+{txt}(3 vs base) 7  {c |}{col 16}{res}{space 2}-.8901227{col 28}{space 2} .2236032{col 39}{space 5}-1.335129{col 53}{space 3}-.4451164
+{txt}(3 vs base) 8  {c |}{col 16}{res}{space 2}-.8303921{col 28}{space 2} .2772936{col 39}{space 5}-1.385126{col 53}{space 3}-.2756584
+{txt}{hline 15}{c BT}{hline 11}{hline 11}{hline 14}{hline 12}
+{res}
+{com}. 
+. mi estimate, dots post eform: xtgee obesity i.PRETERM  c.Growth_Month  i.PRETERM#c.Growth_Month , family(binomial) link(logit) corr(exchangeable)
+{res}
+{txt}Imputations ({res:20}):
+{col 3}{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}10{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}20 done
+{res}
+{txt}Multiple-imputation estimates{col 49}Imputations{col 67}= {res}        20
+{txt}GEE population-averaged model{col 49}Number of obs{col 67}= {res}    57,010
+
+{txt}Group variable:{ralign 27:{res:id}}{col 49}Number of groups{col 67}= {res}     7,129
+{txt}Link:{ralign 37:{res:logit}}{col 49}Obs per group:
+Family:{ralign 35:{res:binomial}}{col 49}              min{col 67}= {res}         1
+{txt}Correlation:{ralign 30:{res:exchangeable}}{col 49}              avg{col 67}= {res}       8.0
+{txt}Scale parameter:{ralign 26:{res:1}}{col 49}              max{col 67}= {res}         8
+
+{txt}{col 49}Average RVI{col 67}= {res}    2.2856
+{txt}{col 49}Largest FMI{col 67}= {res}    0.9082
+{txt}DF adjustment:{ralign 28: {res:Large sample}}{col 49}DF:     min{col 67}= {res}     23.42
+{txt}{col 49}        avg{col 67}= {res}    306.14
+{txt}{col 49}        max{col 67}= {res}  1,126.17
+{txt}Model F test:{ralign 29: {res:Equal FMI}}{col 49}F({res}   7{txt},{res}  306.9{txt}){col 67}= {res}     21.59
+{txt}Within VCE type: {ralign 25:{res:Conventional}}{col 49}Prob > F{col 67}= {res}    0.0000
+
+{txt}{hline 23}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}               obesity{col 24}{c |}     exp(b){col 36}   Std. Err.{col 48}      t{col 56}   P>|t|{col 64}     [95% Con{col 77}f. Interval]
+{hline 23}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 15}PRETERM {c |}
+{space 20}1  {c |}{col 24}{res}{space 2} .9698331{col 36}{space 2} .1815227{col 47}{space 1}   -0.16{col 56}{space 3}0.870{col 64}{space 4} .6713202{col 77}{space 3} 1.401084
+{txt}{space 20}2  {c |}{col 24}{res}{space 2} .6858658{col 36}{space 2} .4116027{col 47}{space 1}   -0.63{col 56}{space 3}0.530{col 64}{space 4} .2102381{col 77}{space 3}  2.23752
+{txt}{space 20}3  {c |}{col 24}{res}{space 2} 1.649338{col 36}{space 2} .9452141{col 47}{space 1}    0.87{col 56}{space 3}0.383{col 64}{space 4} .5357623{col 77}{space 3} 5.077466
+{txt}{space 22} {c |}
+{space 10}Growth_Month {c |}{col 24}{res}{space 2}  1.02148{col 36}{space 2} .0034549{col 47}{space 1}    6.28{col 56}{space 3}0.000{col 64}{space 4} 1.014365{col 77}{space 3} 1.028645
+{txt}{space 22} {c |}
+PRETERM#c.Growth_Month {c |}
+{space 20}1  {c |}{col 24}{res}{space 2} .9970819{col 36}{space 2} .0050888{col 47}{space 1}   -0.57{col 56}{space 3}0.568{col 64}{space 4} .9870198{col 77}{space 3} 1.007247
+{txt}{space 20}2  {c |}{col 24}{res}{space 2} .9952762{col 36}{space 2} .0151175{col 47}{space 1}   -0.31{col 56}{space 3}0.756{col 64}{space 4} .9657575{col 77}{space 3} 1.025697
+{txt}{space 20}3  {c |}{col 24}{res}{space 2} .9834837{col 36}{space 2} .0155888{col 47}{space 1}   -1.05{col 56}{space 3}0.294{col 64}{space 4} .9533049{col 77}{space 3} 1.014618
+{txt}{space 22} {c |}
+{space 17}_cons {c |}{col 24}{res}{space 2} .0217442{col 36}{space 2} .0015616{col 47}{space 1}  -53.31{col 56}{space 3}0.000{col 64}{space 4} .0188385{col 77}{space 3} .0250981
+{txt}{hline 23}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. 
+. mimrgns PRETERM , at(Growth_Month=(0 2 4 10 22 34 46 58)) post eform cmdmargins contrast
+{txt}note: option predict() not specified; predict(xb) assumed
+{res}
+{txt}Multiple-imputation estimates{col 49}Imputations{col 67}= {res}        20
+{txt}Contrasts of adjusted predictions{col 49}Number of obs{col 67}= {res}    57,010
+{txt}{col 49}Average RVI{col 67}= {res}    0.5241
+{txt}{col 49}Largest FMI{col 67}= {res}    0.5404
+{txt}DF adjustment:{ralign 15: {res:Large sample}}{col 49}DF:     min{col 67}= {res}     68.38
+{txt}{col 49}        avg{col 67}= {res}    480.18
+{txt}Within VCE type: {ralign 12:{res:Delta-method}}{col 49}        max{col 67}= {res}  1,327.03
+
+{txt}Expression{col 14}: {res}Linear prediction, predict(xb)
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:1._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}0}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:2._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}2}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:3._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 10}4}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:4._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}10}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:5._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}22}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:6._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}34}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:7._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}46}{p_end}
+{p2colreset}{...}
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:8._at}:{space 1}{res:{txt:Growth_Month}{space 4}{txt:=} {space 9}58}{p_end}
+{p2colreset}{...}
+
+{res}{txt}{hline 15}{c TT}{hline 11}{hline 11}{hline 14}{hline 12}
+{col 16}{c |}     exp(b){col 28}   Std. Err.{col 40}     [95% Con{col 53}f. Interval]
+{hline 15}{c +}{hline 11}{hline 11}{hline 14}{hline 12}
+{space 3}PRETERM@_at {c |}
+(1 vs base) 1  {c |}{col 16}{res}{space 2} .9698331{col 28}{space 2} .1815227{col 39}{space 5} .6713202{col 53}{space 3} 1.401084
+{txt}(1 vs base) 2  {c |}{col 16}{res}{space 2} .9641812{col 28}{space 2} .1735871{col 39}{space 5} .6768829{col 53}{space 3} 1.373421
+{txt}(1 vs base) 3  {c |}{col 16}{res}{space 2} .9585622{col 28}{space 2} .1660332{col 39}{space 5}   .68207{col 53}{space 3} 1.347137
+{txt}(1 vs base) 4  {c |}{col 16}{res}{space 2}  .941901{col 28}{space 2} .1459774{col 39}{space 5} .6947398{col 53}{space 3} 1.276993
+{txt}(1 vs base) 5  {c |}{col 16}{res}{space 2} .9094424{col 28}{space 2} .1209262{col 39}{space 5} .7002876{col 53}{space 3} 1.181065
+{txt}(1 vs base) 6  {c |}{col 16}{res}{space 2} .8781022{col 28}{space 2} .1205367{col 39}{space 5} .6695247{col 53}{space 3} 1.151658
+{txt}(1 vs base) 7  {c |}{col 16}{res}{space 2} .8478421{col 28}{space 2} .1406169{col 39}{space 5} .6096422{col 53}{space 3} 1.179112
+{txt}(1 vs base) 8  {c |}{col 16}{res}{space 2} .8186248{col 28}{space 2} .1710767{col 39}{space 5}  .539506{col 53}{space 3} 1.242148
+{txt}(2 vs base) 1  {c |}{col 16}{res}{space 2} .6858658{col 28}{space 2} .4116027{col 39}{space 5} .2102381{col 53}{space 3}  2.23752
+{txt}(2 vs base) 2  {c |}{col 16}{res}{space 2} .6794012{col 28}{space 2} .3934412{col 39}{space 5} .2170903{col 53}{space 3}  2.12624
+{txt}(2 vs base) 3  {c |}{col 16}{res}{space 2} .6729976{col 28}{space 2}  .376165{col 39}{space 5} .2237806{col 53}{space 3} 2.023973
+{txt}(2 vs base) 4  {c |}{col 16}{res}{space 2} .6541467{col 28}{space 2} .3301062{col 39}{space 5} .2421081{col 53}{space 3} 1.767425
+{txt}(2 vs base) 5  {c |}{col 16}{res}{space 2}  .618014{col 28}{space 2} .2686624{col 39}{space 5}  .262315{col 53}{space 3} 1.456041
+{txt}(2 vs base) 6  {c |}{col 16}{res}{space 2} .5838772{col 28}{space 2} .2543375{col 39}{space 5} .2467299{col 53}{space 3} 1.381724
+{txt}(2 vs base) 7  {c |}{col 16}{res}{space 2}  .551626{col 28}{space 2} .2796264{col 39}{space 5} .2017508{col 53}{space 3} 1.508253
+{txt}(2 vs base) 8  {c |}{col 16}{res}{space 2} .5211562{col 28}{space 2}   .32572{col 39}{space 5} .1504826{col 53}{space 3} 1.804885
+{txt}(3 vs base) 1  {c |}{col 16}{res}{space 2} 1.649338{col 28}{space 2} .9452141{col 39}{space 5} .5357623{col 53}{space 3} 5.077466
+{txt}(3 vs base) 2  {c |}{col 16}{res}{space 2} 1.595306{col 28}{space 2} .8833812{col 39}{space 5} .5382899{col 53}{space 3} 4.727937
+{txt}(3 vs base) 3  {c |}{col 16}{res}{space 2} 1.543044{col 28}{space 2} .8264039{col 39}{space 5} .5395753{col 53}{space 3} 4.412701
+{txt}(3 vs base) 4  {c |}{col 16}{res}{space 2} 1.396308{col 28}{space 2} .6833531{col 39}{space 5} .5345929{col 53}{space 3} 3.647032
+{txt}(3 vs base) 5  {c |}{col 16}{res}{space 2} 1.143372{col 28}{space 2} .5102307{col 39}{space 5} .4763233{col 53}{space 3} 2.744562
+{txt}(3 vs base) 6  {c |}{col 16}{res}{space 2} .9362537{col 28}{space 2} .4501083{col 39}{space 5} .3642106{col 53}{space 3} 2.406769
+{txt}(3 vs base) 7  {c |}{col 16}{res}{space 2} .7666544{col 28}{space 2} .4440429{col 39}{space 5} .2455598{col 53}{space 3} 2.393548
+{txt}(3 vs base) 8  {c |}{col 16}{res}{space 2} .6277775{col 28}{space 2} .4492745{col 39}{space 5} .1536606{col 53}{space 3} 2.564774
+{txt}{hline 15}{c BT}{hline 11}{hline 11}{hline 14}{hline 12}
+{res}
+{com}. 
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\Golnaz\Desktop\preterm\DO\logs\interaction\GEE\Crude.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}18 Jul 2025, 17:13:01
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
